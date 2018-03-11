@@ -47,13 +47,16 @@ void BasicGreedy(int knapsack, int elementQuantity, struct element matriz[]){
 	}
 	
 	// Imprime la mochila final
-	printf("La mochila quedaria de la siguiente forma: \n\n");
+	printf("La mochila mediante el 'algoritmo greedy' quedaria de la siguiente forma: \n\n");
+	int total = 0;
 	printf("	Objeto X | Costo | Valor\n");
 	for (int i = 0; i < elementQuantity; ++i){
 		if (inKnapsack[i].identity != 0){
 			printf("	Objeto %d | %d     | %d\n", inKnapsack[i].identity, inKnapsack[i].cost, inKnapsack[i].value);
+			total += inKnapsack[i].value;
 		}
 	}
+	printf("	       Total : %d\n", total);
 	printf("\n");
 }
 

@@ -2,7 +2,6 @@
 // Programa del knapsack 0/1. ///
 /////////////////////////////////
 
-struct element *objects;         // Total de objetos.
 struct space** table;	         // Tabla de números y valores
 struct element *objectsSelected; // Objetos seleccionados dinámicamente.
 int lenSelected;                 // Cantidad de objetos seleccionados dinámicamente.
@@ -29,12 +28,12 @@ void createTable(int rows, int columns){
 
 
 // Llenar la tabla de ceros. Puede ser una operación omitida.
-void fillTable(int maxRow, int maxColumn){
+void fillTable(int maxRow, int maxColumn, struct element matriz[]){
 	
 	int tempValue, totalValue, cost, value; // Variables a utilizar.
 	for(int j=0; j < maxColumn; j++){
-		cost = objects[j].cost; // Peso del objeto.
-		value = objects[j].value;   // Valor del objeto.
+		cost = matriz[j].cost; // Peso del objeto.
+		value = matriz[j].value;   // Valor del objeto.
 
 		for(int i=0; i < maxRow; i++){
 			if (cost <= i){
@@ -71,12 +70,8 @@ void fillTable(int maxRow, int maxColumn){
 
 // Imprimir todos los valores de la tabla.
 void printTable(int maxRow, int maxColumn){
-	printf("\n Objects \n");
-	for(int i=0; i < maxColumn; i++){
-		printf("- Object %d - cost: %d - Value: %d ", objects[i].identity, objects[i].cost, objects[i].value);
-		printf("\n");
-	}
 
+	/*
 	printf("\n Table \n");
 	for(int i=0; i < maxRow; i++){
 		printf("%d | ", i);
@@ -85,13 +80,18 @@ void printTable(int maxRow, int maxColumn){
 		}
 		printf("\n");
 	}
-
-	printf("\n Results \n");
-	printf("(");
-	for(int i=0; i < lenSelected; i++){
-		printf("( Object %d )", objectsSelected[i].identity);
+	*/
+	int total = 0;
+	// Imprime la mochila final
+	printf("La mochila mediante el 'algoritmo dinámico' quedaria de la siguiente forma: \n\n");
+	printf("	Objeto X | Costo | Valor\n");
+	for (int i = 0; i < lenSelected; ++i){
+		printf("	Objeto %d | %d     | %d\n", objectsSelected[i].number, objectsSelected[i].cost,
+			 objectsSelected[i].value);
+		total += objectsSelected[i].value;
 	}
-	printf(")\n");
+	printf("	       Total : %d\n", total);
+	printf("\n");
 }
 
 
@@ -101,14 +101,14 @@ void freeTables(int maxColumn){
 		free(table[i]); // Liberar columnas de la tabla principal
 	}
 	free(table); // Libere la tabla principal
-	free(objects); // Libere los objetos
+	//free(objects); // Libere los objetos
 	free(objectsSelected); // Libere los objetos seleccionados.
 	table = NULL;
 }
 
 
 // Choose the objects
-int chooseObjects(int maxRow, int maxColumn){
+int chooseObjects(int maxRow, int maxColumn, struct element matriz[]){
 	int *positions; // Arreglo que almacena las posiciones de los objetos seleccionados.
 	int i, j, pos, len;
 	i = maxRow;
@@ -120,7 +120,7 @@ int chooseObjects(int maxRow, int maxColumn){
 	while(j >= 0){
 		// Si es un valor nuevo o de color azul en la tabla, almaceno su posición y reduzco la fila.
 		if (table[i][j].state){
-			i = i - objects[j].cost;
+			i = i - matriz[j].cost;
 			positions[len] = j; // Almaceno su columna respectiva.
 			len++;
 		}
@@ -130,7 +130,7 @@ int chooseObjects(int maxRow, int maxColumn){
 	objectsSelected = (struct element*)malloc(len * sizeof(struct element)); 
 	for(int i=0; i < len; i++){
 		pos = positions[i];
-		objectsSelected[i] = objects[pos]; // Obtengo la posición del objeto.
+		objectsSelected[i] = matriz[pos]; // Obtengo la posición del objeto.
 	}
 	free(positions); // Libero las posiciones porque ya no son necesarias.
 	lenSelected = len;
@@ -138,18 +138,9 @@ int chooseObjects(int maxRow, int maxColumn){
 }
 
 
-void knapsack(int knapsackSize, int numObjects, int maxcost, int maxValue){
-	srand ( (unsigned int) time(NULL) ); // Evita que los números randoms se repitan.
-	objects = (struct element*)malloc(numObjects*sizeof(struct element)); // Arreglo dinámico
-	int numberOfElementSelected;
-	// Inicializo el arreglo de Struct con valores.
-	for (int i=0; i < numObjects; i++){
-		objects[i].cost = rand() % maxcost + 1;
-		objects[i].value = rand() % maxValue + 1;
-		objects[i].identity = i;
-	}
+void knapsack(int knapsackSize, int numObjects, struct element matriz[]){
 	createTable(knapsackSize + 1, numObjects); // Creo la estructura de la tabla.
-	fillTable(knapsackSize + 1, numObjects); // Lleno la tabla.
-	chooseObjects(knapsackSize, numObjects); // Selecciono los objetos óptimos.
+	fillTable(knapsackSize + 1, numObjects, matriz); // Lleno la tabla.
+	chooseObjects(knapsackSize, numObjects, matriz); // Selecciono los objetos óptimos.
 	printTable(knapsackSize + 1, numObjects); // Imprimo la tabla.
 }

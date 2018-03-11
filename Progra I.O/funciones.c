@@ -22,6 +22,7 @@ struct element generateObject(int identity, int maxCost, int maxValue){
 	obj.identity = identity;            // Numero de 1 a 6
 	obj.cost     = getRandom(maxCost);  // Numero entre 1 y 7
 	obj.value    = getRandom(maxValue); // Numero entre 1 y 20
+	obj.number = identity;
 	return obj;
 }
 
