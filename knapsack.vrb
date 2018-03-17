@@ -1,0 +1,3 @@
+\frametitle{CONTENIDOS}
+\setbeamertemplate{section in toc}[sections numbered]
+    \tableofcontents

@@ -1,0 +1,20 @@
+Se muestra a continuación la tabla greedy con los resultados: 
+\definecolor{Gray}{gray}{0.9}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\begin{center}
+\begin{tabu} to 0.6\textwidth { | X[l] | X[l] | X[l] | } 
+\hline
+\rowcolor{Gray}
+\textbf{Objeto} & \textbf{Peso} & \textbf{Valor}\\
+\hline
+Object 5 & 2 & 18 \\
+\hline
+Object 1 & 2 & 19 \\
+\hline
+Object 4 & 6 & 19 \\
+\hline
+Object 6 & 3 & 8 \\
+\hline
+\end{tabu} \\
+\end{center}
+\[ \textsc{\normalsize Z}\\[0.5cm] = 64 \] 
