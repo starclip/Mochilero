@@ -30,13 +30,13 @@ struct element generateObject(int identity, int maxCost, int maxValue){
 // Llena la matriz de objetos
 void createProblem(struct element matriz[], struct element mat2[], int knapsackSize, int numObjects, int maxCost, int maxValue){
 	struct element elem;
-	printf("El problema es el siguiente:\n\n");
-	printf("	Objeto X | Costo | Valor \n");
+	//printf("El problema es el siguiente:\n\n");
+	//printf("	Objeto X | Costo | Valor \n");
 	for (int i = 0; i < numObjects; ++i){
 		elem = generateObject(i+1, maxCost, maxValue);
 		matriz[i] = elem;
 		mat2[i] = elem;
-		printf("	Objeto %d | %d     | %d\n", matriz[i].identity, matriz[i].cost, matriz[i].value);
+		//printf("	Objeto %d | %d     | %d\n", matriz[i].identity, matriz[i].cost, matriz[i].value);
 	}
-	printf("\n");
+	//printf("\n");
 }

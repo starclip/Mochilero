@@ -78,11 +78,16 @@ struct element getMostValueble(struct element matriz[], int elementQuantity, int
 ###############################################################*/
 void BasicGreedy(FILE *greedyFile, int knapsack, int elementQuantity, struct element matriz[], int type){ 
 	// Llena la mochila 
+
+	printf("Mochila: %d, elementos: %d\n", knapsack, elementQuantity);
+	
+	
 	struct element inKnapsack[elementQuantity];
 	struct element actualObj; 
 	char *line = malloc(100);
 	int total;
 	struct element nullObj = {0,0,0};
+	
 	for (int i = 0; i < elementQuantity; ++i){
 		actualObj = getMostValueble(matriz, elementQuantity, type);
 		if (actualObj.cost <= knapsack){
@@ -91,10 +96,9 @@ void BasicGreedy(FILE *greedyFile, int knapsack, int elementQuantity, struct ele
 		}
 		else{inKnapsack[i] = nullObj;}
 	}
-	
+
 	// Imprime la mochila final del Greddy basico
 	if (type == 0){
-
 		total = 0;
 		fprintf(greedyFile, "%s\n", "Se muestra a continuación la tabla greedy con los resultados: ");
 		fprintf(greedyFile, "%s\n", "\\definecolor{Gray}{gray}{0.9}");
@@ -119,7 +123,8 @@ void BasicGreedy(FILE *greedyFile, int knapsack, int elementQuantity, struct ele
 		fprintf(greedyFile, "\\[ \\textsc{\\normalsize Z}\\\\[0.5cm] = %d \\] \n", total);
 		free(line);
 
-	}else{
+	}
+	else{
 		total = 0;
 		fprintf(greedyFile, "%s\n", "Se muestra a continuación la tabla greedy proporcional con los resultados: ");
 		fprintf(greedyFile, "%s\n", "\\definecolor{Gray}{gray}{0.9}");
@@ -144,4 +149,77 @@ void BasicGreedy(FILE *greedyFile, int knapsack, int elementQuantity, struct ele
 		fprintf(greedyFile, "\\[ \\textsc{\\normalsize Z}\\\\[0.5cm] = %d \\] \n", total);
 		free(line);
 	}
+	printf("@@@@@\n");
+	//total = 0;
+	// Imprime la mochila final
+	
+	printf("La mochila mediante el 'algoritmo greedy' quedaria de la siguiente forma: \n\n");
+	printf("	Objeto X | Costo | Valor\n");
+	for (int i = 0; i < elementQuantity; ++i){
+		if (inKnapsack[i].identity != 0){
+			printf("	Objeto %d | %d     | %d\n", inKnapsack[i].identity, inKnapsack[i].cost, inKnapsack[i].value);
+			total += inKnapsack[i].value;
+		}
+	}
+	printf("	       Total : %d\n", total);
+	printf("\n");
+}
+
+
+int greedy(int knapsack, int elementQuantity, struct element matriz[], int type){ 
+	// Llena la mochila 
+	printf("Mochila: %d, objetos: %d\n", knapsack, elementQuantity);
+	struct element inKnapsack[elementQuantity];
+	struct element actualObj; 
+	int total;
+	struct element nullObj = {0,0,0};
+	
+	for (int i = 0; i < elementQuantity; ++i){
+		actualObj = getMostValueble(matriz, elementQuantity, type);
+		if (actualObj.cost <= knapsack){
+			inKnapsack[i] = actualObj;
+			knapsack -= actualObj.cost;
+		}
+		else{inKnapsack[i] = nullObj;}
+	}
+
+	// Imprime la mochila final del Greddy basico
+	if (type == 0){
+		total = 0;
+		for (int i = 0; i < elementQuantity; ++i){
+			if (inKnapsack[i].identity != 0){
+				total += inKnapsack[i].value;
+			}
+		}
+	}
+	else{
+		total = 0;
+		for (int i = 0; i < elementQuantity; ++i){
+			if (inKnapsack[i].identity != 0){
+				total += inKnapsack[i].value;
+			}
+		}
+	}
+	
+
+
+
+	// Imprime la mochila final
+	total = 0;
+	printf("############################################################\n");
+	printf("############################################################\n");
+	printf("############################################################\n");
+	printf("La mochila mediante el 'algoritmo greedy' quedaria de la siguiente forma: \n\n");
+	printf("	Objeto X | Costo | Valor\n");
+	for (int i = 0; i < elementQuantity; ++i){
+		if (inKnapsack[i].identity != 0){
+			printf("	Objeto %d | %d     | %d\n", inKnapsack[i].identity, inKnapsack[i].cost, inKnapsack[i].value);
+			total += inKnapsack[i].value;
+		}
+	}
+	return total;
+	printf("############################################################\n");
+	printf("############################################################\n");
+	printf("############################################################\n");
+	
 }

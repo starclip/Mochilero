@@ -217,6 +217,7 @@ void freeTables(int maxColumn){
 int chooseObjects(int maxRow, int maxColumn, struct element matriz[]){
 	int *positions; // Arreglo que almacena las posiciones de los objetos seleccionados.
 	int i, j, pos, len;
+	int total = 0;
 	i = maxRow;
 	j = maxColumn-1;
 	len = 0;
@@ -237,16 +238,18 @@ int chooseObjects(int maxRow, int maxColumn, struct element matriz[]){
 	for(int i=0; i < len; i++){
 		pos = positions[i];
 		objectsSelected[i] = matriz[pos]; // Obtengo la posición del objeto.
+		total += objectsSelected[i].value;
 	}
 	free(positions); // Libero las posiciones porque ya no son necesarias.
 	lenSelected = len;
-	return len;
+	return total;
 }
 
 
-void knapsack(int knapsackSize, int numObjects, struct element matriz[]){
+int knapsack(int knapsackSize, int numObjects, struct element matriz[]){
 	createTable(knapsackSize + 1, numObjects); // Creo la estructura de la tabla.
 	fillTable(knapsackSize + 1, numObjects, matriz); // Lleno la tabla.
-	chooseObjects(knapsackSize, numObjects, matriz); // Selecciono los objetos óptimos.
+	int total =  chooseObjects(knapsackSize, numObjects, matriz); // Selecciono los objetos óptimos.
 	printTable(knapsackSize + 1, numObjects); // Imprimo la tabla.
+	return total;
 }

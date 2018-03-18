@@ -9,9 +9,8 @@
 #include "greddy.c"
 #include "latex.c"
 
-#include "ModoExperimento.c"
 #include "ModoEjemplo.c"
-
+#include "ModoExperimento.c"
 
 int main(int argc, char *argv[]){
 
@@ -73,8 +72,8 @@ int main(int argc, char *argv[]){
        		printf("\nDigite un numero que se encuentre en el rango de 0 a 100\n\n");
        		return 1;
        	}
-        // Se hace el modo experimento.	
-       	printf("%d  ###\n", value);
+        // Se hace el modo experimento.
+        modoExperimento(value);	
     }
 
     return 0;
