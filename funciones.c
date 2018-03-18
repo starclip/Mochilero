@@ -5,6 +5,7 @@ void getTotalExecutionTime(double totalExecutionTime){
 	printf("El tiempo total de ejecucion es: %f segundos\n", totalExecutionTime);
 }
 
+
 //#############################################################
 //  Imprime la matriz de tiempos
 //#############################################################
@@ -65,10 +66,16 @@ void printResultMatrix(int greddyB[10][10], int greddyP[10][10], int Mochila[10]
 //  Imprime la matriz de estadisticas
 //#############################################################
 void printEstadisticMatrix(int mat1[10][10], int mat2[10][10]){
+	int counter1 = 0;
+	int counter2 = 0;
+
 	printf("\nEstadistica Greddy basico - Mochila\n");
 	for (int i = 0; i < 10; i++){
 		for (int j = 0; j < 10; j++){
 			printf("%d |", mat1[i][j] );
+			if (mat1[i][j] != 0)
+				counter1 += 1;
+			
 		}
 		printf("\n\n");
 	}
@@ -76,11 +83,16 @@ void printEstadisticMatrix(int mat1[10][10], int mat2[10][10]){
 	for (int i = 0; i < 10; i++){
 		for (int j = 0; j < 10; j++){
 			printf("%d |", mat2[i][j] );
+			if (mat2[i][j] != 0)
+				counter2 += 1;
 		}
 		printf("\n\n");
 	}
-}
 
+	printf("#######\n");
+	printf("El promedio de Greddy Basico       con Mochila es: %d%c \n", counter1, '%');
+	printf("El promedio de Greddy Proporcional con Mochila es: %d%c \n", counter2, '%');
+}
 
 
 //#############################################################
