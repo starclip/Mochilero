@@ -81,7 +81,6 @@ void BasicGreedy(FILE *greedyFile, int knapsack, int elementQuantity, struct ele
 
 	printf("Mochila: %d, elementos: %d\n", knapsack, elementQuantity);
 	
-	
 	struct element inKnapsack[elementQuantity];
 	struct element actualObj; 
 	char *line = malloc(100);
@@ -168,7 +167,9 @@ void BasicGreedy(FILE *greedyFile, int knapsack, int elementQuantity, struct ele
 
 int greedy(int knapsack, int elementQuantity, struct element matriz[], int type){ 
 	// Llena la mochila 
-	printf("Mochila: %d, objetos: %d\n", knapsack, elementQuantity);
+	
+	//printf("Mochila: %d, objetos: %d\n", knapsack, elementQuantity);
+	
 	struct element inKnapsack[elementQuantity];
 	struct element actualObj; 
 	int total;
@@ -203,7 +204,7 @@ int greedy(int knapsack, int elementQuantity, struct element matriz[], int type)
 	
 
 
-
+/*
 	// Imprime la mochila final
 	total = 0;
 	printf("############################################################\n");
@@ -221,5 +222,5 @@ int greedy(int knapsack, int elementQuantity, struct element matriz[], int type)
 	printf("############################################################\n");
 	printf("############################################################\n");
 	printf("############################################################\n");
-	
+	*/
 }

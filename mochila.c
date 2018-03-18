@@ -146,12 +146,10 @@ void results(FILE *output, int numObjects, int knapsacksize, struct element matr
 
 // Llenar la tabla de ceros. Puede ser una operación omitida.
 void fillTable(int maxRow, int maxColumn, struct element matriz[]){
-	
 	int tempValue, totalValue, cost, value; // Variables a utilizar.
 	for(int j=0; j < maxColumn; j++){
 		cost = matriz[j].cost; // Peso del objeto.
 		value = matriz[j].value;   // Valor del objeto.
-
 		for(int i=0; i < maxRow; i++){
 			if (cost <= i){
 				tempValue = i - cost;
@@ -190,15 +188,15 @@ void printTable(int maxRow, int maxColumn){
 
 	int total = 0;
 	// Imprime la mochila final
-	printf("La mochila mediante el 'algoritmo dinámico' quedaria de la siguiente forma: \n\n");
-	printf("	Objeto X | Costo | Valor\n");
+	//printf("La mochila mediante el 'algoritmo dinámico' quedaria de la siguiente forma: \n\n");
+	//printf("	Objeto X | Costo | Valor\n");
 	for (int i = 0; i < lenSelected; ++i){
-		printf("	Objeto %d | %d     | %d\n", objectsSelected[i].number, objectsSelected[i].cost,
-			 objectsSelected[i].value);
+		//printf("	Objeto %d | %d     | %d\n", objectsSelected[i].number, objectsSelected[i].cost,
+		//	 objectsSelected[i].value);
 		total += objectsSelected[i].value;
 	}
-	printf("	       Total : %d\n", total);
-	printf("\n");
+	//printf("	       Total : %d\n", total);
+	//printf("\n");
 }
 
 
@@ -250,6 +248,6 @@ int knapsack(int knapsackSize, int numObjects, struct element matriz[]){
 	createTable(knapsackSize + 1, numObjects); // Creo la estructura de la tabla.
 	fillTable(knapsackSize + 1, numObjects, matriz); // Lleno la tabla.
 	int total =  chooseObjects(knapsackSize, numObjects, matriz); // Selecciono los objetos óptimos.
-	printTable(knapsackSize + 1, numObjects); // Imprimo la tabla.
+	//printTable(knapsackSize + 1, numObjects); // Imprimo la tabla.
 	return total;
 }

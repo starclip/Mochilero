@@ -12,13 +12,23 @@ void modoExperimento(int iterations){
 	//int maxValue = 20;     // Debe cumplir que: 0 < maxValue < 100
 	//int maxCost = 7;       // Esta dado por la funcion findObjectsMaxCi(knapsackSize)
 	
+	double tiempoGreddyBasico[10][10];        fillMat(tiempoGreddyBasico);
+	double tiempoGreddyProporcional[10][10];  fillMat(tiempoGreddyProporcional);
+	double tiempoKnapsac[10][10];             fillMat(tiempoKnapsac);
+	double executionTime = 0;
+	double totalExecutionTime = 0;
 	// Ejecuta las n iteraciones
 	for (int i = 1; i <= iterations; i++){
 		int ciclos = 10;
-		int total;
+		int total  = 0;
+		// Guardan los resultados de los algoritmos
 		int resultadosGreddyBasico[10][10];
 		int resultadosGreddyProporcional[10][10];
 		int resultadosKnapsac[10][10];
+
+		// Guarda el inicio del reloj
+		clock_t beginExecutiontime;
+
 		// mochila de 100 hasta 1000
 		for (int j = 1; j <= ciclos; j++){
 			// Objetos desde 10 hasta 100
@@ -30,55 +40,55 @@ void modoExperimento(int iterations){
 				int maxValue = 100;
 				struct element problema1[numObjects];
 				struct element problema2[numObjects];
-
 				// Se crea el problema
 				createProblem(problema1, problema2, knapsackSize, numObjects, maxCost, maxValue);
-				
-				// Se ejecuta con los 3 algoritmos
 
-				// Greddy Basico
-				printf("############################################################\n");
-				printf("Basico\n");
-				total = greedy(knapsackSize, numObjects, problema1, 1); 
+				// Greddy Basico //
+				beginExecutiontime = clock(); 
+				total = greedy(knapsackSize, numObjects, problema1, 1);
+				executionTime = ((double)(clock()-beginExecutiontime)/CLOCKS_PER_SEC);
+				tiempoGreddyBasico[j-1][k-1] += executionTime;
 				resultadosGreddyBasico[j-1][k-1] = total;
-				printf("\nTotal: %d\n", total);
-				printf("############################################################\n\n\n\n\n");
-				
+				totalExecutionTime += executionTime;
+
 				// Greddy proporcional
-				printf("############################################################\n");
-				printf("Proporcional\n");
+				beginExecutiontime = clock();
 				total = greedy(knapsackSize, numObjects, problema2, 0); 
+				executionTime = ((double)(clock()-beginExecutiontime)/CLOCKS_PER_SEC);
+				tiempoGreddyProporcional[j-1][k-1] += executionTime;
 				resultadosGreddyProporcional[j-1][k-1] = total;
-				printf("\nTotal: %d\n", total);
-				printf("############################################################\n\n\n\n\n");
+				totalExecutionTime += executionTime;
 
 				// Mochila
-				printf("############################################################\n");
-				printf("Mochila\n");
+				beginExecutiontime = clock();
 				total = knapsack(knapsackSize, numObjects, problema1);
+				executionTime = ((double)(clock()-beginExecutiontime)/CLOCKS_PER_SEC);
+				tiempoKnapsac[j-1][k-1] += executionTime;
 				resultadosKnapsac[j-1][k-1] = total;
-				printf("\nTotal: %d\n", total);
-				printf("############################################################\n\n\n\n\n");
+				totalExecutionTime += executionTime;				
 			}	
 		}
-
+		
 
 		// Generar latex
-		printf("\nTable Greddy\n");
+
+		// Valores
+		printf("\nTable Greddy basico\n");
 		for (int i = 0; i < 10; i++){
 			for (int j = 0; j < 10; j++){
 				printf("%d |", resultadosGreddyBasico[i][j] );
 			}
 			printf("\n\n");
 		}
-		printf("\nTable Greddy\n");
+		
+		printf("\nTable Greddy proporcional\n");
 		for (int i = 0; i < 10; i++){
 			for (int j = 0; j < 10; j++){
 				printf("%d |", resultadosGreddyProporcional[i][j] );
 			}
 			printf("\n\n");
 		}
-		printf("\nTable Greddy\n");
+		printf("\nTable mochila\n");
 		for (int i = 0; i < 10; i++){
 			for (int j = 0; j < 10; j++){
 				printf("%d |", resultadosKnapsac[i][j] );
@@ -86,8 +96,31 @@ void modoExperimento(int iterations){
 			printf("\n\n");
 		}
 	}
+
+	// Tiempos
+	printf("Greddy\n");
+	for (int i = 0; i < 10; i++){
+		for (int j = 0; j < 10; j++){
+			printf("%f |", tiempoGreddyBasico[i][j]);
+		}
+		printf("\n\n");
+	}
+
+	printf("Greddy prop\n");
+	for (int i = 0; i < 10; i++){
+		for (int j = 0; j < 10; j++){
+			printf("%f |", tiempoGreddyProporcional[i][j]);
+		}
+		printf("\n\n");
+	}
+
+	printf("Mochila\n");
+	for (int i = 0; i < 10; i++){
+		for (int j = 0; j < 10; j++){
+			printf("%f |", tiempoKnapsac[i][j]);
+		}
+		printf("\n\n");
+	}
+
+	printf("El tiempo total de ejecucion es: %f segundos\n", totalExecutionTime);
 }
-
-
-
-//  formula para verificar los Ci's al 40% de la mochila coo maximo
