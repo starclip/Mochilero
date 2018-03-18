@@ -200,6 +200,30 @@ void createProblem(struct element matriz[], struct element mat2[], int knapsackS
 }
 
 
+//#############################################################
+// Close Files
+//#############################################################
+void closeFiles(FILE *file1, FILE *file2){
+	fclose(file1);
+	fclose(file2);
+}
+
+// ############################################################
+// Llena el latex knapsack.tex en modo experimento
+// ############################################################
+void generateExpLatex(FILE *output, FILE *execFile, FILE *respFile, int iterations){
+
+	createLatex(output); // Inicializo las declaraciones de Latex
+	cover(output); // Genero la portada
+	informationExperiment(output, iterations); // Se declara la información inicial
+	changeGeometry(output, 1); // Se hace más grande el tamaño (coordenadas)
+	saveLatex(output, execFile, execFileName); // Se dibujan las tablas de ejecución
+	saveLatex(output, respFile, respFileName); // Se dibujan las tablas de resultados
+	changeGeometry(output, 0); // Se restablecen las coordenadas del tamaño
+	closeLatex(output); // Se cierra el archivo y se ejecuta.
+}
+
+
 /*#############################################################
  Obtiene el rendimiento del objeto, recibe los siguientes parametos:
  - elem es el elemento de tipo struct element

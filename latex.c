@@ -1,5 +1,6 @@
-
-
+//#############################################################
+// Inicializo los datos fijos que va a tener el documento.
+//#############################################################
 void createLatex(FILE *output){
     fprintf(output, "%s\n", "\\documentclass[10pt,letterpaper]{article}");
     fprintf(output, "%s\n", "\\usepackage[utf8]{inputenc}");
@@ -21,6 +22,10 @@ void createLatex(FILE *output){
     fprintf(output, "%s\n", "\\setlength{\\parskip}{\\baselineskip}");
 }
 
+
+//#############################################################
+// Genero la portada.
+//#############################################################
 void cover(FILE *output){
     fprintf(output, "%s\n", "\\begin{document} \n\
     \\begin{titlepage} \n\
@@ -56,6 +61,9 @@ void cover(FILE *output){
     ");
 }
 
+//#############################################################
+// Imprimo la información que aparece por defecto en el modo Ejemplo.
+//#############################################################
 void informationExample(FILE *output){
     fprintf(output, "%s\n", "\\titlepage{\\textbf{Modo Ejemplo:}} \\newline \\newline \n\
         Se resolverá un problema general por medio de diversos algoritmos que nos \n\
@@ -88,6 +96,48 @@ void informationExample(FILE *output){
         ");
 }
 
+
+//#############################################################
+// Imprimo la información que aparece por defecto en el modo Experimento con el número de iteraciones.
+//#######################################################
+void informationExperiment(FILE *output, int n){
+
+    fprintf(output, "%s\n", "\\titlepage{\\textbf{Modo Experimento:}} \\newline \\newline ");
+    fprintf(output, "Se resolverán %d ", n);
+    fprintf(output, "%s\n", "problemas de mochila por medio de diversos algoritmos que nos \n\
+        permitan encontrar varias soluciones a ese problema. \n\
+        El problema que se nos plantea es sobre mochila. \\\\ \n\
+        Hay que llevar una mochila con capacidad de 100 hasta 1000 objetos para un viaje. \n\
+        Tenemos una serie de objetos que podemos llevar, pero esos objetos tienen un respectivo peso \n\
+        y valor que serán producidos de manera aleatoria. \\ \\ \\newline \\newline \n\
+        Restricciones: \n\
+        \\begin{itemize} \n\
+        \\item \\textbf{Capacidad:} La mochila tendrá una capacidad que varía de 100 hasta 1000. \n\
+        \\item \\textbf{Objetos:} Se generarán aleatoriamente de 10 a 100 objetos. \n\
+        \\item \\textbf{C{i}:} Varía entre $0 < C{i} \\leq 40\\%$ de la capacidad de la mochila. \n\
+        \\item \\textbf{V{i}:} Varía entre $0 < V{i} \\leq 100$. \n\
+        \\end{itemize} \n\
+        Los tres algoritmos que vamos a implementar son: \n\
+        \\begin{itemize} \n\
+        \\item \\textbf{Algoritmo de Programación Dinámica:} Algoritmo para el caso 0/1. \n\
+        \\item \\textbf{Algoritmo Greedy Básico:} Cada vez se escoge el objeto más \n\
+         valioso que quepa en lo que sobre de la mochila. \n\
+        \\item \\textbf{Algoritmo Greedy Proporcional:} En este se calcula el rendimiento definido \n\
+        como el valor del objeto dividido entre la capacidad que consume. Se escoge el de mayor rendimiento \n\
+        \\end{itemize} \n\
+        \\ En el caso de programación dinámica ya que nuestro objetivo es maximizar el valor que obtenemos, usamos la fórmula: \n\
+        \\[ \\textsc{\\normalsize MAX(Z)}\\\\[0.5cm] = \\sum_{i=1}^{n}x_{i}v_{i} \\] \n\
+        \\ Que está sujeto a:  \n\
+        \\[ \\sum x_{i}c_{i} \\leq C \\] \n\
+        \\ Con cada $x_{i}$ = 0 o 1.  \n\
+        \\ \\ \\newline \\newline \n\
+        ");
+}
+
+
+//#############################################################
+// Creo la tabla de objetos. Se usa solamente en el modo Ejemplo.
+//#######################################################
 void createObjectTable(FILE *output, int numObjects, struct element matriz[]){
     char *line = malloc(100);
     fprintf(output, "%s\n", "Se muestra a continuación la tabla de objetos con su respectivo costo (peso) y valor \n\
@@ -111,6 +161,134 @@ void createObjectTable(FILE *output, int numObjects, struct element matriz[]){
     free(line);
 }
 
+//#############################################################
+// Creo la tabla dinámica. Se usa solamente en el modo Ejemplo.
+//#######################################################
+
+void createDynamicTable(FILE *output, int maxRow, int maxColumn, struct element matriz[]){
+    char *line = malloc(100);
+    fprintf(output, "%s\n", "\\definecolor{Gray}{gray}{0.5}");
+    fprintf(output, "%s\n", "\\definecolor{GreenBlack}{RGB}{2,80,0}");
+    fprintf(output, "%s\n", "\\begin{center}");
+    fprintf(output, "%s", "\\begin{tabu} to 1.0\\textwidth { |");
+    for(int i=0; i < (maxColumn + 1); i++){
+        fprintf(output, "%s", " c |");
+    }
+    fprintf(output, "%s\n", " }");
+    fprintf(output, "%s\n", "\\hline");
+    fprintf(output, "%s", "\\cellcolor{Gray}\\color{black}\\textbf{X} & ");
+    for(int i=0; i < maxColumn; i++){
+        sprintf(line, "\\cellcolor{Gray}\\color{black}\\textbf{%d}", matriz[i].number);
+        fprintf(output, "%s", line);
+        if (i+1 < maxColumn){
+            fprintf(output, "%s", " & ");
+        }else{
+            fprintf(output, "%s\n", " \\\\ ");
+        }
+    }
+    fprintf(output, "%s\n", "\\hline");
+    for(int i=0; i < maxRow; i++){
+        fprintf(output, "\\cellcolor{Gray}\\color{black}%d & ", i);
+        for(int j=0; j < maxColumn; j++){
+            if(table[i][j].state){
+                fprintf(output, "%s", "\\textcolor{GreenBlack}{ ");
+            }else{
+                fprintf(output, "%s", "\\textcolor{red}{ ");
+            }
+            
+            fprintf(output, "%d}", table[i][j].numb);
+            if (j+1 < maxColumn){
+                fprintf(output, "%s", " & ");
+            }else{
+                fprintf(output, "%s\n", " \\\\ ");
+            }
+        }
+        fprintf(output, "%s\n", "\\hline");
+    }
+    fprintf(output, "%s\n", "\\end{tabu} \\\\");
+    fprintf(output, "%s\n", "\\end{center}");
+    free(line);
+}
+
+
+//#############################################################
+// Imprimo los resultados
+//#######################################################
+void results(FILE *output, int numObjects, int knapsacksize, struct element matriz[]){
+    FILE *temp, *temp2;
+    char c;
+    temp = fopen("temp.txt", "w");
+    temp2 = fopen("temp2.txt", "w");
+    int count = 0, sum = 0;
+    char *letters = "ABCDEF";
+    char *line = malloc(100);
+    fprintf(output, "%s\n", "El resultado es el siguiente: ");
+    fprintf(output, "%s\n", "Las soluciones de X son las siguientes: ");
+    fprintf(output, "%s", "\\[ \\textsc{\\normalsize Z}\\\\[0.5cm] = ");
+    fprintf(temp, "%s", "\\[ " );
+    fprintf(temp2, "%s", "\\[ ");
+    for(int i = lenSelected - 1; i >= 0; i--){
+        while(count < (objectsSelected[i].number - 1)){
+            fprintf(temp, "X_{%d} = 0, ", matriz[count].number);
+            fprintf(temp2, "(%d * 0) +", matriz[count].cost);
+            sprintf(line, "(%d * 0) + ", matriz[count].value);
+            fprintf(output, "%s", line);
+            count++;
+        }
+        fprintf(temp, "X_{%d} = 1", matriz[count].number);
+        fprintf(temp2, "(%d * 1)", matriz[count].cost);
+        sprintf(line, "(%d * 1)", matriz[count].value);
+        fprintf(output, "%s", line);
+        printf("Count: %d\n", count);
+        if (objectsSelected[i].number != numObjects){
+            fprintf(output, "%s", "+");
+            fprintf(temp, "%s", ", ");
+            fprintf(temp2, "%s", "+");
+        }
+        sum += matriz[count].value;
+        count++;
+    }
+    // Si quedan objetos que no se han representado.
+    while(count < (numObjects)){
+        fprintf(temp, "X_{%d} = 0", matriz[count].number);
+        fprintf(temp2, "(%d * 0)", matriz[count].cost);
+        sprintf(line, "(%d * 0)", matriz[count].value);
+        fprintf(output, "%s", line);
+        count++;
+        if (count < (numObjects)){
+            fprintf(output, "%s", "+");
+            fprintf(temp, "%s", ", ");
+            fprintf(temp2, "%s", "+");
+        }
+    }
+    fprintf(temp, "%s", " \\]");
+    fprintf(temp2, "\\leq %d", knapsacksize);
+    fprintf(temp2, "%s", " \\]");
+    fprintf(output, "%s\n", " \\]");
+    fprintf(output, "\\[ \\textsc{\\normalsize Z}\\\\[0.5cm] = %d \\] \n", sum);
+    fclose(temp);
+    fclose(temp2);
+    temp = fopen("temp.txt", "r");
+    fseek(temp, 0, SEEK_SET);
+    while((c=fgetc(temp)) != EOF){
+        fprintf(output, "%c", c);
+    }
+    fclose(temp);
+    fprintf(output, "%s\n", "\\newline Esta sujeto a: ");
+    temp2 = fopen("temp2.txt", "r");
+    fseek(temp2, 0, SEEK_SET);
+    while((c=fgetc(temp2)) != EOF){
+        fprintf(output, "%c", c);
+    }
+    fclose(temp2);
+    remove("temp.txt");
+    remove("temp2.txt");
+}
+
+
+//#############################################################
+// Imprimo la explicación del algoritmo dinámico, con los objetos, los respectivos Z y X.
+//#######################################################
 void introductionDynamicExample(FILE *output, int numObjects, struct element matriz[]){
     char *line = malloc(100);
     fprintf(output, "%s\n", "\\section{Algoritmo Dinámico $0/1$} \n\
@@ -149,6 +327,9 @@ void introductionDynamicExample(FILE *output, int numObjects, struct element mat
 }
 
 
+//#############################################################
+// Imprimo la explicación del algoritmo greedy básico. La información básica.
+//#######################################################
 void introductionGreedyExample(FILE *output, int numObjects, struct element matriz[]){
     char *line = malloc(100);
     int count = 0;
@@ -169,6 +350,10 @@ void introductionGreedyExample(FILE *output, int numObjects, struct element matr
     fprintf(output, "%s\n", "\\newline Ahora proseguimos realizando la tabla greedy básico.");
 }
 
+
+//#############################################################
+// Imprimo la explicación del algoritmo greedy proporcional, la información básica.
+//#######################################################
 void introductionGreedyPropExample(FILE *output, int numObjects, struct element matriz[]){
     char *line = malloc(100);
     int count = 0;
@@ -189,29 +374,165 @@ void introductionGreedyPropExample(FILE *output, int numObjects, struct element 
     fprintf(output, "%s\n", "\\newline Ahora proseguimos realizando la tabla greedy proporcional.");
 }
 
-void greedyTable(FILE *output){
-    char c;
-    FILE *greedyFile;
-    greedyFile = fopen("greedy.txt", "r");
-    fseek(greedyFile, 0, SEEK_SET);
-    while((c=fgetc(greedyFile)) != EOF){
-        fprintf(output, "%c", c);
-    }
-    fclose(greedyFile);
+
+//#############################################################
+// Imprimo en una página el título Ejecuciones.
+//#######################################################
+void writeExecCase(FILE *output){
+    fprintf(output, "%s\n", "\\newpage ");
+    fprintf(output, "%s\n", "\\begin{center}");
+    fprintf(output, "%s\n", "\\newcommand{\\HRule}{\\rule{\\linewidth}{0.5mm}}");
+    fprintf(output, "%s\n", "\\center");
+    fprintf(output, "%s\n", "\\HRule\\\\[6cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "{\\centering \\Huge\\bfseries Ejecuciones}\\\\[0.4cm]\n");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[6cm]");
+    fprintf(output, "%s\n", "\\HRule");
+    fprintf(output, "%s\n", "\\end{center}");
+    fprintf(output, "%s\n", "\\newpage ");
 }
 
-void propGreedyTable(FILE *output){
-    char c;
-    FILE *greedyFile;
-    greedyFile = fopen("greedyProp.txt", "r");
-    fseek(greedyFile, 0, SEEK_SET);
-    while((c=fgetc(greedyFile)) != EOF){
-        fprintf(output, "%c", c);
-    }
-    fclose(greedyFile);
+
+//#############################################################
+// Imprimo en una página el título de la iteración.
+//#######################################################
+void writeCase(FILE *output, int iteration){
+    fprintf(output, "%s\n", "\\begin{center}");
+    fprintf(output, "%s\n", "\\newcommand{\\HRule}{\\rule{\\linewidth}{0.5mm}}");
+    fprintf(output, "%s\n", "\\center");
+    fprintf(output, "%s\n", "\\HRule\\\\[6cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "{\\centering \\Huge\\bfseries Iteración %d}\\\\[0.4cm]\n", iteration);
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[6cm]");
+    fprintf(output, "%s\n", "\\HRule");
+    fprintf(output, "%s\n", "\\end{center}");
+    fprintf(output, "%s\n", "\\newpage ");
 }
 
 
+//#############################################################
+// Almaceno en el archivo target lo que tenga escrito el archivo source
+//#######################################################
+void saveLatex(FILE *target, FILE *source, char *name){
+    char c;
+    source = fopen(name, "r");
+    fseek(source, 0, SEEK_SET);
+    while((c=fgetc(source)) != EOF){
+        fprintf(target, "%c", c); // Escriba caracter a caracter en el target.
+    }
+    fclose(source);
+}
+
+
+//#############################################################
+// Cambie las coordenadas del documento. (Almacenar las tablas requiere todo el espacio de la pantalla)
+//#######################################################
+void changeGeometry(FILE *output, int change){
+    if (change){
+        fprintf(output, "%s\n", "\\newgeometry{left=1.5cm,right=1.5cm,top=3.5cm,bottom=3.5cm}");
+    }else{
+        fprintf(output, "%s\n", "\\newgeometry{left=3.5cm,right=3.5cm,top=3.5cm,bottom=3.5cm}");
+    }
+}
+
+
+//#############################################################
+// Genere una tabla de ejecución. 
+//#######################################################
+void generateExecutionTable(FILE *temp, double mat[][10], char* name){
+
+    fprintf(temp, "%s\n", "\\definecolor{Gray}{gray}{0.9}");
+    fprintf(temp, "%s\n", "\\definecolor{LightCyan}{rgb}{0.88,1,1}");
+    fprintf(temp, "%s\n", "\\begin{center}");
+    fprintf(temp, "%s\n", "\\begin{table}\\renewcommand{\\arraystretch}{2.5}");
+    fprintf(temp, "%s", "\\caption{\\large \\textbf{");
+    fprintf(temp, "%s}}\n", name);
+    fprintf(temp, "%s\n", "\\centering");
+    fprintf(temp, "%s", "\\begin{tabular} { |m{0.5cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|");
+    fprintf(temp, "%s\n", "m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|} ");
+    fprintf(temp, "%s\n", "\\hline");
+    fprintf(temp, "%s\n", "\\rowcolor{Gray}");
+    fprintf(temp, "%s", "\\centering \\textbf{X} & ");
+    fprintf(temp, "%s", "\\centering \\textbf{10} & \\centering \\textbf{20} & \\centering \\textbf{30}\\ & ");
+    fprintf(temp, "%s", "\\centering \\textbf{40} & \\centering \\textbf{50} & \\centering \\textbf{60}\\ & ");
+    fprintf(temp, "%s", "\\centering \\textbf{70} & \\centering \\textbf{80} & \\centering \\textbf{90}\\ & ");
+    fprintf(temp, "%s", "\\textbf{100} \\\\");
+    fprintf(temp, "%s\n", "\\hline");
+
+
+    for(int i=0; i < 10; i++){
+
+        int pos = (i + 1) * 100;
+        fprintf(temp, "\\cellcolor{Gray}%d", pos);
+        for(int j=0; j < 10; j++){
+            fprintf(temp, " & %lf", mat[i][j]);
+        }
+        fprintf(temp, "%s\n", " \\\\");
+        fprintf(temp, "%s\n", "\\hline");
+    }
+    fprintf(temp, "%s\n", "\\end{tabular} \\\\");
+    fprintf(temp, "%s\n", "\\end{table}");
+    fprintf(temp, "%s\n", "\\end{center}");
+    fprintf(temp, "%s\n", "\\newpage ");
+}
+
+
+//#############################################################
+// Genere una tabla de resultados.
+//#######################################################
+void generateResultsTable(FILE *temp, int mat[][10], char* name){
+
+    fprintf(temp, "%s\n", "\\definecolor{Gray}{gray}{0.9}");
+    fprintf(temp, "%s\n", "\\definecolor{LightCyan}{rgb}{0.88,1,1}");
+    fprintf(temp, "%s\n", "\\begin{center}");
+    fprintf(temp, "%s\n", "\\begin{table}\\renewcommand{\\arraystretch}{2.5}");
+    fprintf(temp, "%s", "\\caption{\\large \\textbf{");
+    fprintf(temp, "%s}}\n", name);
+    fprintf(temp, "%s\n", "\\centering");
+    fprintf(temp, "%s", "\\begin{tabular} { |m{0.5cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|");
+    fprintf(temp, "%s\n", "m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|} ");
+    fprintf(temp, "%s\n", "\\hline");
+    fprintf(temp, "%s\n", "\\rowcolor{Gray}");
+    fprintf(temp, "%s", "\\centering \\textbf{X} & ");
+    fprintf(temp, "%s", "\\centering \\textbf{10} & \\centering \\textbf{20} & \\centering \\textbf{30}\\ & ");
+    fprintf(temp, "%s", "\\centering \\textbf{40} & \\centering \\textbf{50} & \\centering \\textbf{60}\\ & ");
+    fprintf(temp, "%s", "\\centering \\textbf{70} & \\centering \\textbf{80} & \\centering \\textbf{90}\\ & ");
+    fprintf(temp, "%s", "\\textbf{100} \\\\");
+    fprintf(temp, "%s\n", "\\hline");
+
+
+    for(int i=0; i < 10; i++){
+
+        int pos = (i + 1) * 100;
+        fprintf(temp, "\\cellcolor{Gray}%d", pos);
+        for(int j=0; j < 10; j++){
+            fprintf(temp, " & \\Large %d", mat[i][j]);
+        }
+        fprintf(temp, "%s\n", " \\\\");
+        fprintf(temp, "%s\n", "\\hline");
+    }
+    fprintf(temp, "%s\n", "\\end{tabular} \\\\");
+    fprintf(temp, "%s\n", "\\end{table}");
+    fprintf(temp, "%s\n", "\\end{center}");
+    fprintf(temp, "%s\n", "\\newpage ");
+}
+
+
+//#############################################################
+// Almacene en latex el tiempo de ejecución.
+//#######################################################
 void executionTime(FILE *output, double time){
     fprintf(output, "%s", "\\newline El algoritmo tarda aproximadamente: ");
     fprintf(output, "%f", time);
@@ -219,6 +540,9 @@ void executionTime(FILE *output, double time){
 }
 
 
+//#############################################################
+// Cierre el documento de latex y ejecutelo.
+//#######################################################
 void closeLatex(FILE *output){
     fprintf(output, "%s\n", "\\end{document}");
     fclose(output);

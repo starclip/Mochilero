@@ -10,15 +10,17 @@ void modoEjemplo(FILE *output){
 	int knapsackSize = 15;
 	double dynamicTime = 0, greedyTime = 0, propGreedyTime = 0;
 
+	/* Abrir los archivos. */
+	greedyFile = fopen(greedyFileName, "w");
+	proportionaGreedyFile = fopen(greedyPropFileName, "w");
+	output = fopen(latexFileName, "w");
+
 	// Guarda la matriz del problema para todos los algoritmos
 	struct element matriz[numObjects];
 	struct element mat2[numObjects];
 
 	// Crea el problema y lo deja en matriz
 	createProblem(matriz, mat2, knapsackSize, numObjects, maxCost, maxValue);
-
-	greedyFile = fopen("greedy.txt", "w");
-	proportionaGreedyFile = fopen("greedyProp.txt", "w");
 
 	// Ejecuta el algoritmo Greedy
 	clock_t begin = clock();
@@ -45,7 +47,6 @@ void modoEjemplo(FILE *output){
 	printf("El algoritmo tarda: %fms\n", dynamicTime);
 
 	/* Generar latex */
-    output = fopen("knapsack.tex", "w");
     createLatex(output);
     cover(output);
     informationExample(output);
@@ -59,12 +60,12 @@ void modoEjemplo(FILE *output){
 
     // Creamos el latex para el algoritmo greedy.
     introductionGreedyExample(output, numObjects, matriz);
-    greedyTable(output);
+    saveLatex(output, greedyFile, greedyFileName);
     executionTime(output, greedyTime);
 
     // Creamos el latex para el algoritmo greedy proporcional.
     introductionGreedyPropExample(output, numObjects, matriz);
-    propGreedyTable(output);
+    saveLatex(output, proportionaGreedyFile, greedyPropFileName);
     executionTime(output, propGreedyTime);
 
     // Creamos el latex para el algoritmo greedy.

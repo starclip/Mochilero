@@ -4,10 +4,10 @@
 #include <time.h>
 
 #include "estructuras.c"
+#include "latex.c"
 #include "funciones.c"
 #include "mochila.c"
 #include "greddy.c"
-#include "latex.c"
 
 #include "ModoEjemplo.c"
 #include "ModoExperimento.c"
@@ -73,7 +73,7 @@ int main(int argc, char *argv[]){
        		return 1;
        	}
         // Se hace el modo experimento.
-        modoExperimento(value);	
+        modoExperimento(output, value);	
     }
 
     return 0;

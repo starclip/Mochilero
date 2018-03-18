@@ -1,6 +1,11 @@
 #define MAX_OBJECTS 8
 #define true 1
 #define false 0
+#define execFileName "execution.txt"
+#define respFileName "results.txt"
+#define latexFileName "knapsack.tex"
+#define greedyFileName "greedy.txt"
+#define greedyPropFileName "greedyProp.txt"
 
 typedef int bool;
 
@@ -17,5 +22,9 @@ struct space{
 	int numb;
 	bool state;
 };
+
+struct space** table;	         // Tabla de números y valores
+struct element *objectsSelected; // Objetos seleccionados dinámicamente.
+int lenSelected;                 // Cantidad de objetos seleccionados dinámicamente.
 
 

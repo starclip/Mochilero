@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.16)  17 MAR 2018 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.16)  18 MAR 2018 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -796,51 +796,3346 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--112
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--112
-
- []
-
 [1]
-Package color Info: Redefining color Gray on input line 121.
- [2]
-Package color Info: Redefining color Gray on input line 176.
-Package color Info: Redefining color LightCyan on input line 177.
- [3]
-Package color Info: Redefining color Gray on input line 204.
-Package color Info: Redefining color LightCyan on input line 205.
- [4] (./knapsack.aux
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(42.67912pt, 528.93675pt, 42.67912pt)
+* v-part:(T,H,B)=(99.58464pt, 595.8007pt, 99.58464pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=528.93675pt
+* \textheight=595.8007pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-9.68535pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [2
+
+]
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/10 0.031000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/10 0.076000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/10 0.151000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/10 0.234000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/10 0.342000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/10 0.479000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/10 0.642000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/10 0.812000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/10 1.008000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 108--109
+[]|\OT1/cmr/m/n/10 1.276000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 110--110
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 110--110
+[]|\OT1/cmr/m/n/10 0.032000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 110--110
+[]|\OT1/cmr/m/n/10 0.083000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 110--110
+[]|\OT1/cmr/m/n/10 0.151000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 110--110
+[]|\OT1/cmr/m/n/10 0.232000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 110--110
+[]|\OT1/cmr/m/n/10 0.335000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 110--110
+[]|\OT1/cmr/m/n/10 0.479000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 110--110
+[]|\OT1/cmr/m/n/10 0.628000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 110--110
+[]|\OT1/cmr/m/n/10 0.812000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 110--110
+[]|\OT1/cmr/m/n/10 1.095000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 110--111
+[]|\OT1/cmr/m/n/10 1.215000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 112--112
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 112--112
+[]|\OT1/cmr/m/n/10 0.032000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 112--112
+[]|\OT1/cmr/m/n/10 0.082000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 112--112
+[]|\OT1/cmr/m/n/10 0.151000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 112--112
+[]|\OT1/cmr/m/n/10 0.238000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 112--112
+[]|\OT1/cmr/m/n/10 0.345000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 112--112
+[]|\OT1/cmr/m/n/10 0.472000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 112--112
+[]|\OT1/cmr/m/n/10 0.669000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 112--112
+[]|\OT1/cmr/m/n/10 0.894000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 112--112
+[]|\OT1/cmr/m/n/10 1.000000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 112--113
+[]|\OT1/cmr/m/n/10 1.236000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 114--114
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 114--114
+[]|\OT1/cmr/m/n/10 0.032000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 114--114
+[]|\OT1/cmr/m/n/10 0.083000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 114--114
+[]|\OT1/cmr/m/n/10 0.146000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 114--114
+[]|\OT1/cmr/m/n/10 0.232000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 114--114
+[]|\OT1/cmr/m/n/10 0.345000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 114--114
+[]|\OT1/cmr/m/n/10 0.476000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 114--114
+[]|\OT1/cmr/m/n/10 0.728000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 114--114
+[]|\OT1/cmr/m/n/10 0.796000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 114--114
+[]|\OT1/cmr/m/n/10 0.995000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 114--115
+[]|\OT1/cmr/m/n/10 1.212000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/10 0.032000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/10 0.079000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/10 0.159000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/10 0.233000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/10 0.353000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/10 0.479000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/10 0.625000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/10 0.819000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/10 0.984000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 116--117
+[]|\OT1/cmr/m/n/10 1.258000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10 0.032000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10 0.079000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10 0.150000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10 0.229000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10 0.338000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10 0.519000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10 0.622000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10 0.798000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 118--118
+[]|\OT1/cmr/m/n/10 0.991000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 118--119
+[]|\OT1/cmr/m/n/10 1.202000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10 0.031000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10 0.079000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10 0.146000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10 0.233000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10 0.340000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10 0.460000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10 0.616000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10 0.791000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10 0.984000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 120--121
+[]|\OT1/cmr/m/n/10 1.208000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10 0.031000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10 0.079000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10 0.146000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10 0.227000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10 0.335000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10 0.463000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10 0.619000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10 0.817000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10 0.973000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 122--123
+[]|\OT1/cmr/m/n/10 1.194000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/10 0.031000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/10 0.078000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/10 0.145000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/10 0.239000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/10 0.337000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/10 0.464000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/10 0.604000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/10 0.776000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 124--124
+[]|\OT1/cmr/m/n/10 0.996000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 124--125
+[]|\OT1/cmr/m/n/10 1.184000| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10 0.030000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10 0.079000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10 0.143000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10 0.230000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10 0.334000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10 0.459000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10 0.611000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10 0.790000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10 0.958000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 126--127
+[]|\OT1/cmr/m/n/10 1.185000| 
+ []
+
+[3]
+Package color Info: Redefining color Gray on input line 132.
+Package color Info: Redefining color LightCyan on input line 133.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 142--142
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 142--142
+[]|\OT1/cmr/m/n/10 0.071000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 142--142
+[]|\OT1/cmr/m/n/10 0.170000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 142--142
+[]|\OT1/cmr/m/n/10 0.331000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 142--142
+[]|\OT1/cmr/m/n/10 0.555000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 142--142
+[]|\OT1/cmr/m/n/10 0.821000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 142--142
+[]|\OT1/cmr/m/n/10 1.174000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 142--142
+[]|\OT1/cmr/m/n/10 1.623000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 142--142
+[]|\OT1/cmr/m/n/10 2.061000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 142--142
+[]|\OT1/cmr/m/n/10 2.581000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 142--143
+[]|\OT1/cmr/m/n/10 3.235000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 0.063000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 0.177000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 0.336000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 0.563000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 0.826000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 1.169000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 1.616000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 2.047000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 2.635000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 144--145
+[]|\OT1/cmr/m/n/10 3.252000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 0.062000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 0.176000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 0.332000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 0.563000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 0.842000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 1.156000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 1.574000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 2.046000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 2.617000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 146--147
+[]|\OT1/cmr/m/n/10 3.205000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 0.058000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 0.173000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 0.319000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 0.526000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 0.793000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 1.119000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 1.509000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 1.937000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 2.499000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 148--149
+[]|\OT1/cmr/m/n/10 3.049000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 0.060000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 0.157000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 0.345000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 0.516000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 0.786000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 1.123000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 1.516000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 1.957000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 2.440000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 150--151
+[]|\OT1/cmr/m/n/10 3.031000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 0.055000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 0.151000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 0.310000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 0.517000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 0.774000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 1.091000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 1.471000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 1.899000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 2.403000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 152--153
+[]|\OT1/cmr/m/n/10 2.967000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10 0.051000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10 0.150000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10 0.295000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10 0.505000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10 0.776000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10 1.074000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10 1.467000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10 1.929000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10 2.421000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 154--155
+[]|\OT1/cmr/m/n/10 2.914000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/10 0.051000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/10 0.143000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/10 0.295000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/10 0.507000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/10 0.748000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/10 1.074000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/10 1.436000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/10 1.858000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/10 2.345000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 156--157
+[]|\OT1/cmr/m/n/10 2.833000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/10 0.051000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/10 0.136000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/10 0.288000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/10 0.487000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/10 0.743000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/10 1.075000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/10 1.420000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/10 1.820000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/10 2.332000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 158--159
+[]|\OT1/cmr/m/n/10 2.868000| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/10 0.047000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/10 0.141000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/10 0.297000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/10 0.478000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/10 0.737000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/10 1.044000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/10 1.421000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/10 1.829000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 160--160
+[]|\OT1/cmr/m/n/10 2.291000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 160--161
+[]|\OT1/cmr/m/n/10 2.784000| 
+ []
+
+[4]
+Package color Info: Redefining color Gray on input line 166.
+Package color Info: Redefining color LightCyan on input line 167.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10 0.249000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10 0.343000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10 0.488000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10 0.633000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10 0.855000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10 1.030000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10 1.197000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10 1.294000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10 1.423000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 176--177
+[]|\OT1/cmr/m/n/10 1.518000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 0.364000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 0.612000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 0.962000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 1.414000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 1.697000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 2.024000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 2.320000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 2.613000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/10 2.940000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 178--179
+[]|\OT1/cmr/m/n/10 3.218000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/10 0.528000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/10 0.888000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/10 1.654000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/10 2.179000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/10 2.584000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/10 3.073000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/10 3.526000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/10 3.959000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/10 4.405000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 180--181
+[]|\OT1/cmr/m/n/10 4.959000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/10 0.701000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/10 1.298000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/10 2.165000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/10 2.756000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/10 3.393000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/10 4.018000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/10 4.745000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/10 5.239000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/10 5.929000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 182--183
+[]|\OT1/cmr/m/n/10 6.509000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 184--184
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 184--184
+[]|\OT1/cmr/m/n/10 0.842000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 184--184
+[]|\OT1/cmr/m/n/10 1.753000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 184--184
+[]|\OT1/cmr/m/n/10 2.713000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 184--184
+[]|\OT1/cmr/m/n/10 3.454000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 184--184
+[]|\OT1/cmr/m/n/10 4.281000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 184--184
+[]|\OT1/cmr/m/n/10 5.049000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 184--184
+[]|\OT1/cmr/m/n/10 5.930000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 184--184
+[]|\OT1/cmr/m/n/10 6.620000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 184--184
+[]|\OT1/cmr/m/n/10 7.397000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 184--185
+[]|\OT1/cmr/m/n/10 8.318000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10 1.008000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10 2.146000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10 3.273000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10 4.193000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10 5.061000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10 6.096000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10 7.109000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10 8.019000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10 8.918000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 186--187
+[]|\OT1/cmr/m/n/10 9.821000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10 1.146000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10 2.539000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10 3.756000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10 4.795000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10 5.915000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10 7.046000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10 8.303000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10 9.446000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10 10.529000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 188--189
+[]|\OT1/cmr/m/n/10 11.826000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10 1.328000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10 3.088000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10 4.320000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10 5.510000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10 6.829000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10 8.036000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10 9.507000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10 10.702000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10 11.960000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 190--191
+[]|\OT1/cmr/m/n/10 13.205000| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/10 1.489000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/10 3.293000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/10 4.792000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/10 6.149000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/10 7.646000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/10 9.006000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/10 10.580000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/10 11.840000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 192--192
+[]|\OT1/cmr/m/n/10 13.416000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 192--193
+[]|\OT1/cmr/m/n/10 14.757000| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10 1.717000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10 3.674000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10 5.403000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10 6.858000| 
+ []
+
+
+Overfull \hbox (0.78923pt too wide) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10 8.516000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10 10.035000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10 11.828000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10 13.208000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10 14.776000| 
+ []
+
+
+Overfull \hbox (5.78925pt too wide) in paragraph at lines 194--195
+[]|\OT1/cmr/m/n/10 16.367000| 
+ []
+
+[5] [6]
+Package color Info: Redefining color Gray on input line 216.
+Package color Info: Redefining color LightCyan on input line 217.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 226--226
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 228--228
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 230--230
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 232--232
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 234--234
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 236--236
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 238--238
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 240--240
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 242--242
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 244--244
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[7]
+Package color Info: Redefining color Gray on input line 250.
+Package color Info: Redefining color LightCyan on input line 251.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 260--260
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 262--262
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 264--264
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 266--266
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 268--268
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 270--270
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 272--272
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 274--274
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 276--276
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 278--278
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[8]
+Package color Info: Redefining color Gray on input line 284.
+Package color Info: Redefining color LightCyan on input line 285.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 294--294
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 296--296
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 298--298
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 300--300
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 302--302
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 304--304
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 306--306
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 308--308
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 310--310
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 312--312
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[9] [10]
+Package color Info: Redefining color Gray on input line 334.
+Package color Info: Redefining color LightCyan on input line 335.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 344--344
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 346--346
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 348--348
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 350--350
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 352--352
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 354--354
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 356--356
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 358--358
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 360--360
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 362--362
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[11]
+Package color Info: Redefining color Gray on input line 368.
+Package color Info: Redefining color LightCyan on input line 369.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 378--378
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 380--380
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 382--382
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 384--384
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 386--386
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 388--388
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 390--390
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 392--392
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 394--394
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 396--396
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[12]
+Package color Info: Redefining color Gray on input line 402.
+Package color Info: Redefining color LightCyan on input line 403.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 412--412
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 414--414
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 416--416
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 418--418
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 420--420
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 422--422
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 424--424
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 426--426
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 428--428
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 430--430
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[13] [14]
+Package color Info: Redefining color Gray on input line 452.
+Package color Info: Redefining color LightCyan on input line 453.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 462--462
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 464--464
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 466--466
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 468--468
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 470--470
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 472--472
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 474--474
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 476--476
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 478--478
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 480--480
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[15]
+Package color Info: Redefining color Gray on input line 486.
+Package color Info: Redefining color LightCyan on input line 487.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 496--496
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 498--498
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 500--500
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 502--502
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 504--504
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 506--506
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 508--508
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 510--510
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 512--512
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 514--514
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[16]
+Package color Info: Redefining color Gray on input line 520.
+Package color Info: Redefining color LightCyan on input line 521.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 530--530
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 532--532
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 534--534
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 536--536
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 538--538
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 540--540
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 542--542
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 544--544
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 546--546
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 548--548
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[17] [18]
+Package color Info: Redefining color Gray on input line 570.
+Package color Info: Redefining color LightCyan on input line 571.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 580--580
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 582--582
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 584--584
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 586--586
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 588--588
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 590--590
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 592--592
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 594--594
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 596--596
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 598--598
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[19]
+Package color Info: Redefining color Gray on input line 604.
+Package color Info: Redefining color LightCyan on input line 605.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 614--614
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 616--616
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 618--618
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 620--620
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 622--622
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 624--624
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 626--626
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 628--628
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 630--630
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 632--632
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[20]
+Package color Info: Redefining color Gray on input line 638.
+Package color Info: Redefining color LightCyan on input line 639.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 648--648
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 650--650
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 652--652
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 654--654
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 656--656
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 658--658
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 660--660
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 662--662
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 664--664
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 666--666
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[21] [22]
+Package color Info: Redefining color Gray on input line 688.
+Package color Info: Redefining color LightCyan on input line 689.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 698--698
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 700--700
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 702--702
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 704--704
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 706--706
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 708--708
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 710--710
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 712--712
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 714--714
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 716--716
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[23]
+Package color Info: Redefining color Gray on input line 722.
+Package color Info: Redefining color LightCyan on input line 723.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 732--732
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 734--734
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 736--736
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 738--738
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 740--740
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 742--742
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 744--744
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 746--746
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 748--748
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 750--750
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[24]
+Package color Info: Redefining color Gray on input line 756.
+Package color Info: Redefining color LightCyan on input line 757.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 766--766
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 768--768
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 770--770
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 772--772
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 774--774
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 776--776
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 778--778
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 780--780
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 782--782
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 784--784
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[25] [26]
+Package color Info: Redefining color Gray on input line 806.
+Package color Info: Redefining color LightCyan on input line 807.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 816--816
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 818--818
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 820--820
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 822--822
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 824--824
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 826--826
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 828--828
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 830--830
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 832--832
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 834--834
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[27]
+Package color Info: Redefining color Gray on input line 840.
+Package color Info: Redefining color LightCyan on input line 841.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 850--850
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 852--852
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 854--854
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 856--856
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 858--858
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 860--860
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 862--862
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 864--864
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 866--866
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 868--868
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[28]
+Package color Info: Redefining color Gray on input line 874.
+Package color Info: Redefining color LightCyan on input line 875.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 884--884
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 886--886
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 888--888
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 890--890
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 892--892
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 894--894
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 896--896
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 898--898
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 900--900
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 902--902
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[29] [30]
+Package color Info: Redefining color Gray on input line 924.
+Package color Info: Redefining color LightCyan on input line 925.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 934--934
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 936--936
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 938--938
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 940--940
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 942--942
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 944--944
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 946--946
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 948--948
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 950--950
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 952--952
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[31]
+Package color Info: Redefining color Gray on input line 958.
+Package color Info: Redefining color LightCyan on input line 959.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 968--968
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 970--970
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 972--972
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 974--974
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 976--976
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 978--978
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 980--980
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 982--982
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 984--984
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 986--986
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[32]
+Package color Info: Redefining color Gray on input line 992.
+Package color Info: Redefining color LightCyan on input line 993.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1002--1002
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1004--1004
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1006--1006
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1008--1008
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1010--1010
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1012--1012
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1014--1014
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1016--1016
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1018--1018
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 1020--1020
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[33] [34]
+Package color Info: Redefining color Gray on input line 1042.
+Package color Info: Redefining color LightCyan on input line 1043.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1052--1052
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1054--1054
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1056--1056
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1058--1058
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1060--1060
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1062--1062
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1064--1064
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1066--1066
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1068--1068
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 1070--1070
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[35]
+Package color Info: Redefining color Gray on input line 1076.
+Package color Info: Redefining color LightCyan on input line 1077.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1086--1086
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1088--1088
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1090--1090
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1092--1092
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1094--1094
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1096--1096
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1098--1098
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1100--1100
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1102--1102
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 1104--1104
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[36]
+Package color Info: Redefining color Gray on input line 1110.
+Package color Info: Redefining color LightCyan on input line 1111.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1120--1120
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1122--1122
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1124--1124
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1126--1126
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1128--1128
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1130--1130
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1132--1132
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1134--1134
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1136--1136
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 1138--1138
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[37] [38]
+Package color Info: Redefining color Gray on input line 1160.
+Package color Info: Redefining color LightCyan on input line 1161.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1170--1170
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1172--1172
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1174--1174
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1176--1176
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1178--1178
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1180--1180
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1182--1182
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1184--1184
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1186--1186
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 1188--1188
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[39]
+Package color Info: Redefining color Gray on input line 1194.
+Package color Info: Redefining color LightCyan on input line 1195.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1204--1204
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1206--1206
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1208--1208
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1210--1210
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1212--1212
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1214--1214
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1216--1216
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1218--1218
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1220--1220
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 1222--1222
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[40]
+Package color Info: Redefining color Gray on input line 1228.
+Package color Info: Redefining color LightCyan on input line 1229.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1238--1238
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1240--1240
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1242--1242
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1244--1244
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1246--1246
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1248--1248
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1250--1250
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1252--1252
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1254--1254
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 1256--1256
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[41] [42]
+Package color Info: Redefining color Gray on input line 1278.
+Package color Info: Redefining color LightCyan on input line 1279.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1288--1288
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1290--1290
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1292--1292
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1294--1294
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1296--1296
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1298--1298
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1300--1300
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1302--1302
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1304--1304
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 1306--1306
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[43]
+Package color Info: Redefining color Gray on input line 1312.
+Package color Info: Redefining color LightCyan on input line 1313.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1322--1322
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1324--1324
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1326--1326
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1328--1328
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1330--1330
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1332--1332
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1334--1334
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1336--1336
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1338--1338
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 1340--1340
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[44]
+Package color Info: Redefining color Gray on input line 1346.
+Package color Info: Redefining color LightCyan on input line 1347.
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1356--1356
+[]|\OT1/cmr/m/n/10 100| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1358--1358
+[]|\OT1/cmr/m/n/10 200| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1360--1360
+[]|\OT1/cmr/m/n/10 300| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1362--1362
+[]|\OT1/cmr/m/n/10 400| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1364--1364
+[]|\OT1/cmr/m/n/10 500| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1366--1366
+[]|\OT1/cmr/m/n/10 600| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1368--1368
+[]|\OT1/cmr/m/n/10 700| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1370--1370
+[]|\OT1/cmr/m/n/10 800| 
+ []
+
+
+Overfull \hbox (0.77368pt too wide) in paragraph at lines 1372--1372
+[]|\OT1/cmr/m/n/10 900| 
+ []
+
+
+Overfull \hbox (5.7737pt too wide) in paragraph at lines 1374--1374
+[]|\OT1/cmr/m/n/10 1000| 
+ []
+
+[45]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(99.58464pt, 415.12572pt, 99.58464pt)
+* v-part:(T,H,B)=(99.58464pt, 595.8007pt, 99.58464pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=415.12572pt
+* \textheight=595.8007pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-9.68535pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ (./knapsack.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 5284 strings out of 493029
- 70410 string characters out of 6136234
- 161930 words of memory out of 5000000
- 8707 multiletter control sequences out of 15000+600000
- 9908 words of font info for 38 fonts, out of 8000000 for 9000
+ 5238 strings out of 493029
+ 69942 string characters out of 6136233
+ 165931 words of memory out of 5000000
+ 8662 multiletter control sequences out of 15000+600000
+ 9574 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,14n,30p,310b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,30p,304b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb>
-Output written on knapsack.pdf (5 pages, 135319 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb>
+Output written on knapsack.pdf (46 pages, 187466 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 194 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

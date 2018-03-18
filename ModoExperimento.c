@@ -1,10 +1,20 @@
-void modoExperimento(int iterations){
+void modoExperimento(FILE *output, int iterations){
+
+	// Datos de entrada del problema
+	FILE *executionFile;
+	FILE *resultsFile;
+	
 	// Guardan el tiempo de ejecucion de los algoritmos y el total de ejecucion
 	double tiempoGreddyBasico[10][10];        fillMat(tiempoGreddyBasico);
 	double tiempoGreddyProporcional[10][10];  fillMat(tiempoGreddyProporcional);
 	double tiempoKnapsac[10][10];             fillMat(tiempoKnapsac);
 	double executionTime = 0;
 	double totalExecutionTime = 0;
+
+	// Abren los archivos para editar.
+	executionFile = fopen(execFileName, "w");
+	resultsFile = fopen(respFileName, "w");
+	output = fopen(latexFileName, "w");
 	
 	// Ejecuta las n iteraciones
 	for (int i = 1; i <= iterations; i++){
@@ -68,14 +78,32 @@ void modoExperimento(int iterations){
 					estadisticKnapBasico[j-1][k-1] = total3;
 				if (total2 == total3)
 					estadisticKnapProporcional[j-1][k-1] = total3;
+
+				freeTables(numObjects);
 			}	
 		}
 		
+		/* Escriba en el archivo resultsFile los datos. */
+		writeCase(resultsFile, i);
+		generateResultsTable(resultsFile, resultadosGreddyBasico, "Greedy Básico");
+		generateResultsTable(resultsFile, resultadosGreddyProporcional, "Greedy Proporcional");
+		generateResultsTable(resultsFile, resultadosKnapsac, "Mochila 0/1");
 		// Generar latex en las funciones
 		//printResultMatrix(resultadosGreddyBasico, resultadosGreddyProporcional, resultadosKnapsac);
 		//printEstadisticMatrix(estadisticKnapBasico, estadisticKnapProporcional);
 	}
 
+	/* Escriba en el archivo executionFile los datos. */
+	writeExecCase(executionFile);
+	generateExecutionTable(executionFile, tiempoGreddyBasico, "Greedy Básico");
+	generateExecutionTable(executionFile, tiempoGreddyProporcional, "Greedy Proporcional");
+	generateExecutionTable(executionFile, tiempoKnapsac, "Mochila 0/1");
+	/*
 	printTimeMatrix(tiempoGreddyBasico, tiempoGreddyProporcional, tiempoKnapsac);
 	getTotalExecutionTime(totalExecutionTime);
+	*/
+	// Cierro los archivos.
+	closeFiles(executionFile, resultsFile);
+
+	generateExpLatex(output, executionFile, resultsFile, iterations); // Genero el latex.
 }

@@ -7,28 +7,14 @@ Se muestra a continuación la tabla greedy con los resultados:
 \rowcolor{Gray}
 \textbf{Objeto} & \textbf{Peso} & \textbf{Valor}\\
 \hline
-Object 65 & 8 & 93 \\
+Object 1 & 3 & 18 \\
 \hline
-Object 41 & 7 & 55 \\
+Object 2 & 3 & 15 \\
 \hline
-Object 39 & 16 & 92 \\
+Object 6 & 6 & 20 \\
 \hline
-Object 33 & 16 & 71 \\
-\hline
-Object 29 & 18 & 60 \\
-\hline
-Object 54 & 38 & 83 \\
-\hline
-Object 49 & 31 & 77 \\
-\hline
-Object 5 & 39 & 93 \\
-\hline
-Object 90 & 383 & 1 \\
-\hline
-Object 100 & 400 & 64 \\
-\hline
-Object 77 & 30 & 30 \\
+Object 4 & 2 & 5 \\
 \hline
 \end{tabu} \\
 \end{center}
-\[ \textsc{\normalsize Z}\\[0.5cm] = 719 \] 
+\[ \textsc{\normalsize Z}\\[0.5cm] = 58 \] 
