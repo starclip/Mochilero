@@ -72,8 +72,8 @@ void modoExperimento(int iterations){
 		}
 		
 		// Generar latex en las funciones
-		printResultMatrix(resultadosGreddyBasico, resultadosGreddyProporcional, resultadosKnapsac);
-		printEstadisticMatrix(estadisticKnapBasico, estadisticKnapProporcional);
+		//printResultMatrix(resultadosGreddyBasico, resultadosGreddyProporcional, resultadosKnapsac);
+		//printEstadisticMatrix(estadisticKnapBasico, estadisticKnapProporcional);
 	}
 
 	printTimeMatrix(tiempoGreddyBasico, tiempoGreddyProporcional, tiempoKnapsac);

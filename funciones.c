@@ -13,21 +13,21 @@ void printTimeMatrix(double greddyB[10][10], double greddyP[10][10], double Moch
 	printf("\nTabla de tiempos de ejecucion Greddy Basico\n");
 	for (int i = 0; i < 10; i++){
 		for (int j = 0; j < 10; j++){
-			printf("%f |", greddyB[i][j] );
+			printf("%fms |", greddyB[i][j] );
 		}
 		printf("\n\n");
 	}
 	printf("\nTabla de tiempos de ejecucion Greddy Proporcional\n");
 	for (int i = 0; i < 10; i++){
 		for (int j = 0; j < 10; j++){
-			printf("%f |", greddyP[i][j] );
+			printf("%fms |", greddyP[i][j] );
 		}
 		printf("\n\n");
 	}
 	printf("\nTabla de tiempos de ejecucion Mochila\n");
 	for (int i = 0; i < 10; i++){
 		for (int j = 0; j < 10; j++){
-			printf("%f |", Mochila[i][j] );
+			printf("%fms |", Mochila[i][j] );
 		}
 		printf("\n\n");
 	}
@@ -132,7 +132,7 @@ int findObjectsMaxCi(int knapsackSize){
 //  instante en segundos
 //#############################################################
 double getTime(double begin){
-	return ((double)(clock()-begin)/CLOCKS_PER_SEC);
+	return ((double)(clock()-begin)/CLOCKS_PER_SEC)*1000;
 }
 
 
