@@ -66,11 +66,11 @@ void cover(FILE *output){
 //#############################################################
 void informationExample(FILE *output){
     fprintf(output, "%s\n", "\\titlepage{\\textbf{Modo Ejemplo:}} \\newline \\newline \n\
-        Se resolverá un problema general por medio de varios algoritmos que nos \n\
-        permitan encontrar una solución. \n\
+        Se resolverá un problema general por medio de diversos algoritmos que nos \n\
+        permitan encontrar una solución a ese problema. \n\
         El problema que se nos plantea es sobre mochila. \\\\ \n\
-        Hay que llevar una mochila con capacidad de 15 para un viaje. \n\
-        Tenemos una serie de objetos los cuales podemos llevar, pero esos objetos tienen un respectivo peso \n\
+        Hay que llevar una mochila con capacidad de 15 (kilos, gramos) para un viaje. \n\
+        Tenemos una serie de objetos que podemos llevar, pero esos objetos tienen un respectivo peso \n\
         y valor que será producido de manera aleatoria. \\ \\ \\newline \\newline \n\
         Restricciones: \n\
         \\begin{itemize} \n\
@@ -106,10 +106,7 @@ void informationExperiment(FILE *output, int n){
     fprintf(output, "Se resolverán %d ", n);
     fprintf(output, "%s\n", "problemas de mochila por medio de diversos algoritmos que nos \n\
         permitan encontrar varias soluciones a ese problema. \n\
-        El problema que se nos plantea es sobre mochila. \\\\ \n\
-        Hay que llevar una mochila con capacidad de 100 hasta 1000 objetos para un viaje. \n\
-        Tenemos una serie de objetos que podemos llevar, pero esos objetos tienen un respectivo peso \n\
-        y valor que serán producidos de manera aleatoria. \\ \\ \\newline \\newline \n\
+        \\ \\ \\newline \\newline \n\
         Restricciones: \n\
         \\begin{itemize} \n\
         \\item \\textbf{Capacidad:} La mochila tendrá una capacidad que varía de 100 hasta 1000. \n\
@@ -388,7 +385,7 @@ void writeExecCase(FILE *output){
     fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
     fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
     fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
-    fprintf(output, "{\\centering \\Huge\\bfseries Ejecuciones}\\\\[0.4cm]\n");
+    fprintf(output, "{\\centering \\Huge\\bfseries Tiempo de ejecuciones}\\\\[0.4cm]\n");
     fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
     fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
     fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
@@ -398,6 +395,29 @@ void writeExecCase(FILE *output){
     fprintf(output, "%s\n", "\\newpage ");
 }
 
+
+//#############################################################
+// Imprimo en una página el título Estadísticas.
+//#######################################################
+void writeStadCase(FILE *output){
+    fprintf(output, "%s\n", "\\newpage ");
+    fprintf(output, "%s\n", "\\begin{center}");
+    fprintf(output, "%s\n", "\\newcommand{\\HRule}{\\rule{\\linewidth}{0.5mm}}");
+    fprintf(output, "%s\n", "\\center");
+    fprintf(output, "%s\n", "\\HRule\\\\[6cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "{\\centering \\Huge\\bfseries Estadísticas}\\\\[0.4cm]\n");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[0.4cm]");
+    fprintf(output, "%s\n", "\\HRule\\\\[6cm]");
+    fprintf(output, "%s\n", "\\HRule");
+    fprintf(output, "%s\n", "\\end{center}");
+    fprintf(output, "%s\n", "\\newpage ");
+}
 
 //#############################################################
 // Imprimo en una página el título de la iteración.
@@ -477,7 +497,8 @@ void generateExecutionTable(FILE *temp, double mat[][10], char* name){
         int pos = (i + 1) * 100;
         fprintf(temp, "\\cellcolor{Gray}%d", pos);
         for(int j=0; j < 10; j++){
-            fprintf(temp, " & %lf", mat[i][j]);
+            fprintf(temp, " & %.3f", mat[i][j]);
+            fprintf(temp, "%s", "$ms$");
         }
         fprintf(temp, "%s\n", " \\\\");
         fprintf(temp, "%s\n", "\\hline");
@@ -488,6 +509,47 @@ void generateExecutionTable(FILE *temp, double mat[][10], char* name){
     fprintf(temp, "%s\n", "\\newpage ");
 }
 
+
+//#############################################################
+// Genere una tabla de estadísticas. 
+//#######################################################
+void generateStadisticTable(FILE *temp, float mat[][10], char* name){
+
+    fprintf(temp, "%s\n", "\\definecolor{Gray}{gray}{0.9}");
+    fprintf(temp, "%s\n", "\\definecolor{LightCyan}{rgb}{0.88,1,1}");
+    fprintf(temp, "%s\n", "\\begin{center}");
+    fprintf(temp, "%s\n", "\\begin{table}\\renewcommand{\\arraystretch}{2.5}");
+    fprintf(temp, "%s", "\\caption{\\large \\textbf{");
+    fprintf(temp, "%s}}\n", name);
+    fprintf(temp, "%s\n", "\\centering");
+    fprintf(temp, "%s", "\\begin{tabular} { |m{0.5cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|");
+    fprintf(temp, "%s\n", "m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|m{1.3cm}|} ");
+    fprintf(temp, "%s\n", "\\hline");
+    fprintf(temp, "%s\n", "\\rowcolor{Gray}");
+    fprintf(temp, "%s", "\\centering \\textbf{X} & ");
+    fprintf(temp, "%s", "\\centering \\textbf{10} & \\centering \\textbf{20} & \\centering \\textbf{30}\\ & ");
+    fprintf(temp, "%s", "\\centering \\textbf{40} & \\centering \\textbf{50} & \\centering \\textbf{60}\\ & ");
+    fprintf(temp, "%s", "\\centering \\textbf{70} & \\centering \\textbf{80} & \\centering \\textbf{90}\\ & ");
+    fprintf(temp, "%s", "\\textbf{100} \\\\");
+    fprintf(temp, "%s\n", "\\hline");
+
+
+    for(int i=0; i < 10; i++){
+
+        int pos = (i + 1) * 100;
+        fprintf(temp, "\\cellcolor{Gray}%d", pos);
+        for(int j=0; j < 10; j++){
+            fprintf(temp, " & %.2f", mat[i][j]);
+            fprintf(temp, "%s", "\\%");
+        }
+        fprintf(temp, "%s\n", " \\\\");
+        fprintf(temp, "%s\n", "\\hline");
+    }
+    fprintf(temp, "%s\n", "\\end{tabular} \\\\");
+    fprintf(temp, "%s\n", "\\end{table}");
+    fprintf(temp, "%s\n", "\\end{center}");
+    fprintf(temp, "%s\n", "\\newpage ");
+}
 
 //#############################################################
 // Genere una tabla de resultados.
@@ -530,13 +592,13 @@ void generateResultsTable(FILE *temp, int mat[][10], char* name){
 }
 
 
-//#######################################################
+//#############################################################
 // Almacene en latex el tiempo de ejecución.
 //#######################################################
 void executionTime(FILE *output, double time){
     fprintf(output, "%s", "\\newline El algoritmo tarda aproximadamente: ");
     fprintf(output, "%f", time);
-    fprintf(output, "%s\n", " Milisegundos en ejecutarse");
+    fprintf(output, "%s\n", " segundos en ejecutarse");
 }
 
 

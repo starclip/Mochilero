@@ -3,6 +3,7 @@ void modoExperimento(FILE *output, int iterations){
 	// Datos de entrada del problema
 	FILE *executionFile;
 	FILE *resultsFile;
+	FILE *stadisticFile;
 	
 	// Guardan el tiempo de ejecucion de los algoritmos y el total de ejecucion
 	double tiempoGreddyBasico[10][10];        fillMat(tiempoGreddyBasico);
@@ -15,6 +16,7 @@ void modoExperimento(FILE *output, int iterations){
 	executionFile = fopen(execFileName, "w");
 	resultsFile = fopen(respFileName, "w");
 	output = fopen(latexFileName, "w");
+	stadisticFile = fopen(stadFileName, "w");
 	
 	float estadisticKnapProporcionalTotal[10][10]; fillFloatMat(estadisticKnapProporcionalTotal);
 	float estadisticKnapBasicoTotal[10][10]; fillFloatMat(estadisticKnapBasicoTotal);
@@ -100,6 +102,7 @@ void modoExperimento(FILE *output, int iterations){
 			}
 		}
 	}
+
 	for (int m = 0; m < 10; m++){
 		for (int n = 0; n < 10; n++){
 			estadisticKnapProporcionalTotal[m][n] = ((float)estadisticKnapProporcionalTotal[m][n] / (float)iterations) * 100.0;
@@ -107,18 +110,21 @@ void modoExperimento(FILE *output, int iterations){
 		}
 	}
 
-	printEstadisticMatrix(estadisticKnapProporcionalTotal, estadisticKnapBasicoTotal);
+	/* Escriba en el archivo stadisticFile los datos estadísticos calculados. */
+	writeStadCase(stadisticFile);
+	generateStadisticTable(stadisticFile, estadisticKnapProporcionalTotal, "Estadística Greedy Proporcional - Mochila");
+	generateStadisticTable(stadisticFile, estadisticKnapBasicoTotal, "Estadística Greedy Básico - Mochila");
 
 	/* Escriba en el archivo executionFile los datos. */
 	writeExecCase(executionFile);
-	generateExecutionTable(executionFile, tiempoGreddyBasico, "Greedy Básico");
-	generateExecutionTable(executionFile, tiempoGreddyProporcional, "Greedy Proporcional");
-	generateExecutionTable(executionFile, tiempoKnapsac, "Mochila 0/1");
+	generateExecutionTable(executionFile, tiempoGreddyBasico, "Tiempo Greedy Básico");
+	generateExecutionTable(executionFile, tiempoGreddyProporcional, "Tiempo Greedy Proporcional");
+	generateExecutionTable(executionFile, tiempoKnapsac, "Tiempo Mochila 0/1");
 
 	getTotalExecutionTime(totalExecutionTime);
 	
 	// Cierro los archivos.
-	closeFiles(executionFile, resultsFile);
+	closeFiles(executionFile, resultsFile, stadisticFile);
 
-	generateExpLatex(output, executionFile, resultsFile, iterations); // Genero el latex.
+	generateExpLatex(output, executionFile, resultsFile, stadisticFile, iterations); // Genero el latex.
 }

@@ -6,6 +6,7 @@
 #define latexFileName "knapsack.tex"
 #define greedyFileName "greedy.txt"
 #define greedyPropFileName "greedyProp.txt"
+#define stadFileName "estadisticas.txt"
 
 typedef int bool;
 
