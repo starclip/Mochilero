@@ -16,6 +16,9 @@ void modoExperimento(FILE *output, int iterations){
 	resultsFile = fopen(respFileName, "w");
 	output = fopen(latexFileName, "w");
 	
+	float estadisticKnapProporcionalTotal[10][10]; fillFloatMat(estadisticKnapProporcionalTotal);
+	float estadisticKnapBasicoTotal[10][10]; fillFloatMat(estadisticKnapBasicoTotal);
+
 	// Ejecuta las n iteraciones
 	for (int i = 1; i <= iterations; i++){
 		// Variables de configuracion
@@ -75,9 +78,9 @@ void modoExperimento(FILE *output, int iterations){
 
 				// Ejecuta las comparaciones de la estadistica
 				if (total1 == total3)
-					estadisticKnapBasico[j-1][k-1] = total3;
+					estadisticKnapBasico[j-1][k-1] = 1; //total3;
 				if (total2 == total3)
-					estadisticKnapProporcional[j-1][k-1] = total3;
+					estadisticKnapProporcional[j-1][k-1] = 1; //total3;
 
 				freeTables(numObjects);
 			}	
@@ -88,20 +91,32 @@ void modoExperimento(FILE *output, int iterations){
 		generateResultsTable(resultsFile, resultadosGreddyBasico, "Greedy Básico");
 		generateResultsTable(resultsFile, resultadosGreddyProporcional, "Greedy Proporcional");
 		generateResultsTable(resultsFile, resultadosKnapsac, "Mochila 0/1");
-		// Generar latex en las funciones
-		//printResultMatrix(resultadosGreddyBasico, resultadosGreddyProporcional, resultadosKnapsac);
-		//printEstadisticMatrix(estadisticKnapBasico, estadisticKnapProporcional);
+
+		// Calcula la estadistica
+		for (int m = 0; m < 10; m++){
+			for (int n = 0; n < 10; n++){
+				estadisticKnapProporcionalTotal[m][n] += (float) estadisticKnapProporcional[m][n];
+				estadisticKnapBasicoTotal[m][n] += (float) estadisticKnapBasico[m][n];
+			}
+		}
 	}
+	for (int m = 0; m < 10; m++){
+		for (int n = 0; n < 10; n++){
+			estadisticKnapProporcionalTotal[m][n] = ((float)estadisticKnapProporcionalTotal[m][n] / (float)iterations) * 100.0;
+			estadisticKnapBasicoTotal[m][n] = ((float)estadisticKnapBasicoTotal[m][n] / (float)iterations) * 100.0;
+		}
+	}
+
+	printEstadisticMatrix(estadisticKnapProporcionalTotal, estadisticKnapBasicoTotal);
 
 	/* Escriba en el archivo executionFile los datos. */
 	writeExecCase(executionFile);
 	generateExecutionTable(executionFile, tiempoGreddyBasico, "Greedy Básico");
 	generateExecutionTable(executionFile, tiempoGreddyProporcional, "Greedy Proporcional");
 	generateExecutionTable(executionFile, tiempoKnapsac, "Mochila 0/1");
-	/*
-	printTimeMatrix(tiempoGreddyBasico, tiempoGreddyProporcional, tiempoKnapsac);
+
 	getTotalExecutionTime(totalExecutionTime);
-	*/
+	
 	// Cierro los archivos.
 	closeFiles(executionFile, resultsFile);
 

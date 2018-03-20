@@ -1,14 +1,6 @@
 //#############################################################
 //  Imprime la matriz de tiempos
 //#############################################################
-void getTotalExecutionTime(double totalExecutionTime){
-	printf("El tiempo total de ejecucion es: %f segundos\n", totalExecutionTime);
-}
-
-
-//#############################################################
-//  Imprime la matriz de tiempos
-//#############################################################
 void printTimeMatrix(double greddyB[10][10], double greddyP[10][10], double Mochila[10][10]){
 	printf("\nTabla de tiempos de ejecucion Greddy Basico\n");
 	for (int i = 0; i < 10; i++){
@@ -32,7 +24,6 @@ void printTimeMatrix(double greddyB[10][10], double greddyP[10][10], double Moch
 		printf("\n\n");
 	}
 }
-
 
 //#############################################################
 //  Imprime la matriz de resultados
@@ -61,18 +52,17 @@ void printResultMatrix(int greddyB[10][10], int greddyP[10][10], int Mochila[10]
 	}
 }
 
-
 //#############################################################
 //  Imprime la matriz de estadisticas
 //#############################################################
-void printEstadisticMatrix(int mat1[10][10], int mat2[10][10]){
+void printEstadisticMatrix(float mat1[10][10], float mat2[10][10]){
 	int counter1 = 0;
 	int counter2 = 0;
 
 	printf("\nEstadistica Greddy basico - Mochila\n");
 	for (int i = 0; i < 10; i++){
 		for (int j = 0; j < 10; j++){
-			printf("%d |", mat1[i][j] );
+			printf("%f |", mat1[i][j] );
 			if (mat1[i][j] != 0)
 				counter1 += 1;
 			
@@ -82,7 +72,7 @@ void printEstadisticMatrix(int mat1[10][10], int mat2[10][10]){
 	printf("\nEstadistica Greddy proporcional - Mochila\n");
 	for (int i = 0; i < 10; i++){
 		for (int j = 0; j < 10; j++){
-			printf("%d |", mat2[i][j] );
+			printf("%f |", mat2[i][j] );
 			if (mat2[i][j] != 0)
 				counter2 += 1;
 		}
@@ -92,6 +82,26 @@ void printEstadisticMatrix(int mat1[10][10], int mat2[10][10]){
 	printf("#######\n");
 	printf("El promedio de Greddy Basico       con Mochila es: %d%c \n", counter1, '%');
 	printf("El promedio de Greddy Proporcional con Mochila es: %d%c \n", counter2, '%');
+}
+
+//#############################################################
+//  Imprime la matriz de tiempos
+//#############################################################
+void getTotalExecutionTime(double totalExecutionTime){
+	printf("El tiempo total de ejecucion es: %f segundos\n", totalExecutionTime);
+}
+
+
+
+//#############################################################
+//  Llena una matriz de doubles de 0's
+//#############################################################
+void fillFloatMat(float mat[10][10]){
+	for (int i = 0; i < 10; i++){
+		for (int j = 0; j < 10; j++){
+			mat[i][j] = 0.0;
+		}
+	}
 }
 
 
@@ -143,6 +153,7 @@ void addTimeMatrix(double mat[10][10], int i, int j, double value){
 	mat[i][j] += value;
 }
 
+
 //#############################################################
 //  Cambia el valor de la matriz por el valor que le envian
 //#############################################################
@@ -164,6 +175,7 @@ char *concatenar(char *destino, char caracter){
     return destino;
 }
 
+
 //#############################################################
 // Genera numeros aleatorios con un limite
 //#############################################################
@@ -183,44 +195,50 @@ struct element generateObject(int identity, int maxCost, int maxValue){
 	return obj;
 }
 
+
 //#############################################################
 // Llena la matriz de objetos
 //#############################################################
 void createProblem(struct element matriz[], struct element mat2[], int knapsackSize, int numObjects, int maxCost, int maxValue){
 	struct element elem;
+	
 	//printf("El problema es el siguiente:\n\n");
 	//printf("	Objeto X | Costo | Valor \n");
+	
 	for (int i = 0; i < numObjects; ++i){
 		elem = generateObject(i+1, maxCost, maxValue);
 		matriz[i] = elem;
 		mat2[i] = elem;
+		
 		//printf("	Objeto %d | %d     | %d\n", matriz[i].identity, matriz[i].cost, matriz[i].value);
+	
 	}
+	
 	//printf("\n");
 }
 
 
 //#############################################################
-// Close Files
+// Cierra los archivos
 //#############################################################
 void closeFiles(FILE *file1, FILE *file2){
 	fclose(file1);
 	fclose(file2);
 }
 
+
 // ############################################################
 // Llena el latex knapsack.tex en modo experimento
 // ############################################################
 void generateExpLatex(FILE *output, FILE *execFile, FILE *respFile, int iterations){
-
-	createLatex(output); // Inicializo las declaraciones de Latex
-	cover(output); // Genero la portada
+	createLatex(output);                       // Inicializo las declaraciones de Latex
+	cover(output);                             // Genero la portada
 	informationExperiment(output, iterations); // Se declara la información inicial
-	changeGeometry(output, 1); // Se hace más grande el tamaño (coordenadas)
+	changeGeometry(output, 1);                 // Se hace más grande el tamaño (coordenadas)
 	saveLatex(output, execFile, execFileName); // Se dibujan las tablas de ejecución
 	saveLatex(output, respFile, respFileName); // Se dibujan las tablas de resultados
-	changeGeometry(output, 0); // Se restablecen las coordenadas del tamaño
-	closeLatex(output); // Se cierra el archivo y se ejecuta.
+	changeGeometry(output, 0);                 // Se restablecen las coordenadas del tamaño
+	closeLatex(output);                        // Se cierra el archivo y se ejecuta.
 }
 
 
@@ -235,7 +253,7 @@ int getPerformance(struct element elem){
 	else{
 		int res = elem.value / elem.cost;
 		if (res == 0)
-			return 1; // Si el rendimiento es 0 se retorna 1 para que el algoritmo lo tome en cuenta 
+			return 1; 
 		return res;
 	}
 }
@@ -246,8 +264,8 @@ int getPerformance(struct element elem){
  - matriz[] es donde estan los objetos
  - elementQuantity es la cantidad de elementos en la matriz
  - type es el tipo de algoritmo
- 		1 = Greddy Basico
-		0 = Greddy Proporcional
+ 		0 = Greddy Basico
+		1 = Greddy Proporcional
 Retorna el objeto con el mejor valor en caso del Greddy basico o 
 el mejor rendimiento en caso del Greddy proporcional y coloca el 
 identificador del objeto en 0.
@@ -255,9 +273,10 @@ identificador del objeto en 0.
 struct element getMostValueble(struct element matriz[], int elementQuantity, int type){
 	struct element ejem;
 	ejem.value = 0;
+	ejem.cost = 0;
 	int actualValue, ejemValue;
 	for (int i = 0; i < elementQuantity; ++i){
-		if (type == 1){
+		if (type == 0){
 			actualValue = matriz[i].value;
 			ejemValue = ejem.value;
 		}
@@ -265,16 +284,19 @@ struct element getMostValueble(struct element matriz[], int elementQuantity, int
 			actualValue = getPerformance(matriz[i]); 
 			ejemValue   = getPerformance(ejem);
 		}
+
 		// Verifica si entra o no el objeto seleccionado
-		if (matriz[i].identity != 0 && actualValue >= ejemValue){
-			if (actualValue == ejem.value){
-				if (matriz[i].cost <= ejemValue)
+		if (matriz[i].identity != 0){	
+			if (actualValue > ejemValue)
+				ejem = matriz[i];
+			if (actualValue == ejemValue){
+				if (matriz[i].cost < ejem.cost)
 					ejem = matriz[i];
 			}
-			else
-				ejem = matriz[i];
 		}
+		
 	}
+
 	// Coloca la identidad del objeto en 0 para que ya no sea consultado
 	for (int i = 0; i < elementQuantity; ++i){
 		if (ejem.identity == matriz[i].identity){

@@ -21,29 +21,28 @@ void modoEjemplo(FILE *output){
 
 	// Crea el problema y lo deja en matriz
 	createProblem(matriz, mat2, knapsackSize, numObjects, maxCost, maxValue);
+	clock_t newBegin;
 
 	// Ejecuta el algoritmo Greedy
-	clock_t begin = clock();
+	newBegin = clock();
 	BasicGreedy(greedyFile, knapsackSize, numObjects, matriz, 0);
-	greedyTime = ((double)(clock()-begin)/CLOCKS_PER_SEC)*1000;
+	greedyTime = getTime(newBegin);
 	printf("El algoritmo tarda: %fms\n", greedyTime);
-
 	fclose(greedyFile);
 	printf("\n");
 
 	// Ejecuta el algoritmo Greedy proporcional
-	clock_t newBegin = clock();
+	newBegin = clock();
 	BasicGreedy(proportionaGreedyFile, knapsackSize, numObjects, mat2, 1);
-	propGreedyTime = ((double)(clock()-newBegin)/CLOCKS_PER_SEC)*1000;
+	propGreedyTime = getTime(newBegin);
 	printf("El algoritmo tarda: %fms\n", propGreedyTime);
-	
 	fclose(proportionaGreedyFile);
 	printf("\n");
 
 	// Ejecuta knapsack
-	clock_t start = clock();
+	newBegin = clock();
 	knapsack(knapsackSize, numObjects, matriz);
-	dynamicTime = ((double)(clock()-start)/CLOCKS_PER_SEC)*1000;
+	dynamicTime = getTime(newBegin);
 	printf("El algoritmo tarda: %fms\n", dynamicTime);
 
 	/* Generar latex */
@@ -69,9 +68,6 @@ void modoEjemplo(FILE *output){
     executionTime(output, propGreedyTime);
 
     // Creamos el latex para el algoritmo greedy.
-
     closeLatex(output);
-
     freeTables(numObjects);
-
 }

@@ -1,5 +1,3 @@
-
-
 /*#############################################################
  Ejecuta el algoritmo Greddy, recibe los siguientes parametos:
  - knapsack es el tamano de la mochila
@@ -10,10 +8,6 @@
 		0 = Greddy Proporcional
 ###############################################################*/
 void BasicGreedy(FILE *greedyFile, int knapsack, int elementQuantity, struct element matriz[], int type){ 
-	// Llena la mochila 
-
-	printf("Mochila: %d, elementos: %d\n", knapsack, elementQuantity);
-	
 	struct element inKnapsack[elementQuantity];
 	struct element actualObj; 
 	char *line = malloc(100);
@@ -30,9 +24,9 @@ void BasicGreedy(FILE *greedyFile, int knapsack, int elementQuantity, struct ele
 	}
 
 	// Imprime la mochila final del Greddy basico
+	total = 0;
 	if (type == 0){
-		total = 0;
-		fprintf(greedyFile, "%s\n", "Se muestra a continuación la tabla greedy con los resultados: ");
+		fprintf(greedyFile, "%s\n", "Se muestra a continuación la tabla greedy basico con los resultados: ");
 		fprintf(greedyFile, "%s\n", "\\definecolor{Gray}{gray}{0.9}");
 		fprintf(greedyFile, "%s\n", "\\definecolor{LightCyan}{rgb}{0.88,1,1}");
 		fprintf(greedyFile, "%s\n", "\\begin{center}");
@@ -50,14 +44,13 @@ void BasicGreedy(FILE *greedyFile, int knapsack, int elementQuantity, struct ele
 				total += inKnapsack[i].value;
 			}
 		}
+
 		fprintf(greedyFile, "%s\n", "\\end{tabu} \\\\");
 		fprintf(greedyFile, "%s\n", "\\end{center}");
 		fprintf(greedyFile, "\\[ \\textsc{\\normalsize Z}\\\\[0.5cm] = %d \\] \n", total);
 		free(line);
-
 	}
 	else{
-		total = 0;
 		fprintf(greedyFile, "%s\n", "Se muestra a continuación la tabla greedy proporcional con los resultados: ");
 		fprintf(greedyFile, "%s\n", "\\definecolor{Gray}{gray}{0.9}");
 		fprintf(greedyFile, "%s\n", "\\definecolor{LightCyan}{rgb}{0.88,1,1}");
@@ -76,30 +69,17 @@ void BasicGreedy(FILE *greedyFile, int knapsack, int elementQuantity, struct ele
 				total += inKnapsack[i].value;
 			}
 		}
+
 		fprintf(greedyFile, "%s\n", "\\end{tabu} \\\\");
 		fprintf(greedyFile, "%s\n", "\\end{center}");
 		fprintf(greedyFile, "\\[ \\textsc{\\normalsize Z}\\\\[0.5cm] = %d \\] \n", total);
 		free(line);
 	}
-	printf("@@@@@\n");
-	//total = 0;
-	// Imprime la mochila final
-	
-	printf("La mochila mediante el 'algoritmo greedy' quedaria de la siguiente forma: \n\n");
-	printf("	Objeto X | Costo | Valor\n");
-	for (int i = 0; i < elementQuantity; ++i){
-		if (inKnapsack[i].identity != 0){
-			printf("	Objeto %d | %d     | %d\n", inKnapsack[i].identity, inKnapsack[i].cost, inKnapsack[i].value);
-			total += inKnapsack[i].value;
-		}
-	}
-	printf("	       Total : %d\n", total);
-	printf("\n");
 }
 
 
+
 int greedy(int knapsack, int elementQuantity, struct element matriz[], int type){ 
-	// Llena la mochila 
 	struct element inKnapsack[elementQuantity];
 	struct element actualObj; 
 	int total;
@@ -110,39 +90,16 @@ int greedy(int knapsack, int elementQuantity, struct element matriz[], int type)
 		if (actualObj.cost <= knapsack){
 			inKnapsack[i] = actualObj;
 			knapsack -= actualObj.cost;
+
 		}
 		else{inKnapsack[i] = nullObj;}
 	}
 
-	// Imprime la mochila final del Greddy basico
-	if (type == 0){
-		total = 0;
-		for (int i = 0; i < elementQuantity; ++i){
-			if (inKnapsack[i].identity != 0){
-				total += inKnapsack[i].value;
-			}
-		}
-	}
-	else{
-		total = 0;
-		for (int i = 0; i < elementQuantity; ++i){
-			if (inKnapsack[i].identity != 0){
-				total += inKnapsack[i].value;
-			}
-		}
-	}
-/*
-	// Imprime la mochila final
-	printf("############################################################\n");
-	printf("La mochila mediante el 'algoritmo greedy' quedaria de la siguiente forma: \n\n");
-	printf("	Objeto X | Costo | Valor\n");
+	total = 0;
 	for (int i = 0; i < elementQuantity; ++i){
 		if (inKnapsack[i].identity != 0){
-			printf("	Objeto %d | %d     | %d\n", inKnapsack[i].identity, inKnapsack[i].cost, inKnapsack[i].value);
 			total += inKnapsack[i].value;
 		}
 	}
-	printf("############################################################\n");
-*/
 	return total;
 }
