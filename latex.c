@@ -66,11 +66,11 @@ void cover(FILE *output){
 //#############################################################
 void informationExample(FILE *output){
     fprintf(output, "%s\n", "\\titlepage{\\textbf{Modo Ejemplo:}} \\newline \\newline \n\
-        Se resolverá un problema general por medio de diversos algoritmos que nos \n\
-        permitan encontrar una solución a ese problema. \n\
+        Se resolverá un problema general por medio de varios algoritmos que nos \n\
+        permitan encontrar una solución. \n\
         El problema que se nos plantea es sobre mochila. \\\\ \n\
-        Hay que llevar una mochila con capacidad de 15 (kilos, gramos) para un viaje. \n\
-        Tenemos una serie de objetos que podemos llevar, pero esos objetos tienen un respectivo peso \n\
+        Hay que llevar una mochila con capacidad de 15 para un viaje. \n\
+        Tenemos una serie de objetos los cuales podemos llevar, pero esos objetos tienen un respectivo peso \n\
         y valor que será producido de manera aleatoria. \\ \\ \\newline \\newline \n\
         Restricciones: \n\
         \\begin{itemize} \n\
@@ -530,13 +530,13 @@ void generateResultsTable(FILE *temp, int mat[][10], char* name){
 }
 
 
-//#############################################################
+//#######################################################
 // Almacene en latex el tiempo de ejecución.
 //#######################################################
 void executionTime(FILE *output, double time){
     fprintf(output, "%s", "\\newline El algoritmo tarda aproximadamente: ");
     fprintf(output, "%f", time);
-    fprintf(output, "%s\n", " segundos en ejecutarse");
+    fprintf(output, "%s\n", " Milisegundos en ejecutarse");
 }
 
 
