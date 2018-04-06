@@ -6,9 +6,7 @@
 #include "estructuras.c"
 #include "latex.c"
 #include "funciones.c"
-#include "mochila.c"
-#include "greddy.c"
-
+#include "arbolDinamico.c"
 #include "ModoEjemplo.c"
 #include "ModoExperimento.c"
 
@@ -75,6 +73,5 @@ int main(int argc, char *argv[]){
         // Se hace el modo experimento.
         modoExperimento(output, value);	
     }
-
     return 0;
 }

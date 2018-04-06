@@ -1,73 +1,46 @@
-void modoEjemplo(FILE *output){
+// 0 Spanglish. Todo en español.
 
+void modoEjemplo(FILE *salida){
 
-	FILE *greedyFile;
-	FILE *proportionaGreedyFile;
-	// Datos de entrada del problema
-	int numObjects = 6;
-	int maxValue = 20;
-	int maxCost = 7;
-	int knapsackSize = 15;
-	double dynamicTime = 0, greedyTime = 0, propGreedyTime = 0;
-
-	/* Abrir los archivos. */
-	greedyFile = fopen(greedyFileName, "w");
-	proportionaGreedyFile = fopen(greedyPropFileName, "w");
-	output = fopen(latexFileName, "w");
-
-	// Guarda la matriz del problema para todos los algoritmos
-	struct element matriz[numObjects];
-	struct element mat2[numObjects];
-
-	// Crea el problema y lo deja en matriz
-	createProblem(matriz, mat2, knapsackSize, numObjects, maxCost, maxValue);
+	// Datos de entrada del problema.
+	int objetos = MAX_EJEMPLO_OBJ;
+	int largoTabla = objetos + 1;
+	double dynamicTime = 0, greedyTime = 0;
 	clock_t newBegin;
 
-	// Ejecuta el algoritmo Greedy
-	newBegin = clock();
-	BasicGreedy(greedyFile, knapsackSize, numObjects, matriz, 0);
-	greedyTime = getTime(newBegin);
-	printf("El algoritmo tarda: %fms\n", greedyTime);
-	fclose(greedyFile);
-	printf("\n");
+	/* Abrir los archivos */
+	salida = fopen(archivoLatex, "w");
 
-	// Ejecuta el algoritmo Greedy proporcional
-	newBegin = clock();
-	BasicGreedy(proportionaGreedyFile, knapsackSize, numObjects, mat2, 1);
-	propGreedyTime = getTime(newBegin);
-	printf("El algoritmo tarda: %fms\n", propGreedyTime);
-	fclose(proportionaGreedyFile);
-	printf("\n");
+	/* Inicializan las estructuras. */
+	struct elemento matriz[objetos]; // Tabla de objetos.
+	float A[objetos + 1][objetos + 1]; // Tabla A, que posee los porcentajes.
+	int R[objetos + 1][objetos + 1]; // Tabla R, que posee la ubicación del árbol.
 
-	// Ejecuta knapsack
+	// Crea el problema (faltan detalles)
+	crearProblema(matriz, objetos);
+	printTable(matriz, objetos); // Se imprime la tabla de los objetos.
+
+	// Ejecuta el algoritmo de árbol dinámico.
+	ceroLlenado(largoTabla, A, R); // Se llena la tabla de -1. (A y R)
 	newBegin = clock();
-	knapsack(knapsackSize, numObjects, matriz);
+	primerLlenado(largoTabla, A, R, matriz, objetos); // Se llena la tabla de las diagonales iniciales.
+	llenado(largoTabla, A, R, matriz); // Se llena la tabla por medio del Pum Pum Pum.
 	dynamicTime = getTime(newBegin);
 	printf("El algoritmo tarda: %fms\n", dynamicTime);
 
-	/* Generar latex */
-    createLatex(output);
-    cover(output);
-    informationExample(output);
-    createObjectTable(output, numObjects, matriz);
+	printA(largoTabla, A);
+	printR(largoTabla, R);
 
-    // Creamos el latex para el algoritmo dinámico.
-    introductionDynamicExample(output, numObjects, matriz);
-    createDynamicTable(output, knapsackSize + 1, numObjects, matriz); 
-    results(output, numObjects, knapsackSize, matriz);
-    executionTime(output, dynamicTime);
+	/* Genera el latex */
+    createLatex(salida);
+    cover(salida);
+    informationExample(salida);
+    createObjectTable(salida, objetos, matriz);
+    introductionDynamicExample(salida, objetos, matriz);
+    createExampleTableA(salida, largoTabla, A);
+    createExampleTableR(salida, largoTabla, R);
+    executionTime(salida, dynamicTime);
+    closeLatex(salida);
 
-    // Creamos el latex para el algoritmo greedy.
-    introductionGreedyExample(output, numObjects, matriz);
-    saveLatex(output, greedyFile, greedyFileName);
-    executionTime(output, greedyTime);
-
-    // Creamos el latex para el algoritmo greedy proporcional.
-    introductionGreedyPropExample(output, numObjects, matriz);
-    saveLatex(output, proportionaGreedyFile, greedyPropFileName);
-    executionTime(output, propGreedyTime);
-
-    // Creamos el latex para el algoritmo greedy.
-    closeLatex(output);
-    freeTables(numObjects);
+	fclose(salida);
 }

@@ -1,0 +1,166 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{color, colortbl}
+\usepackage{underscore}
+\usepackage{tabu}
+\usepackage{url}
+\usepackage{ragged2e}
+\usepackage{verbatim}
+\usepackage{mathdots} 
+\usepackage{amsmath, amssymb, amsbsy, amsfonts} 
+\usepackage[left=3.5cm,right=3.5cm,top=3.5cm,bottom=3.5cm]{geometry}
+\setlength{\parskip}{\baselineskip}
+\begin{document} 
+    \begin{titlepage} 
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+    \center   
+    \textsc{\Huge Instituto Tecnológico de Costa Rica}\\[1.5cm] 
+    \textsc{\normalsize PROYECTO DE INVESTIGACIÓN DE OPERACIONES}\\[0.5cm] 
+    \textsc{\normalsize PROYECTO 2}\\[0.5cm] 
+    \HRule\\[0.4cm] 
+    {\huge\bfseries \vspace{1cm} Árboles Binarios}\\[0.4cm] 
+    \HRule\\[2cm] 
+    \textbf{\Large Estudiantes}\\[0.5cm] 
+        \begin{minipage}{0.4\textwidth} 
+        \begin{flushleft} 
+            \large 
+            Jason Barrantes Arce 
+            \textsc{2015048456} 
+        \end{flushleft} 
+    \end{minipage} 
+    ~ 
+    \begin{minipage}{0.4\textwidth} 
+        \begin{flushright} 
+           	\large 
+            Steven Bonilla Zúñiga 
+            \textsc{2015056296} 
+        \end{flushright} 
+    \end{minipage} 
+   \newline \newline 
+   \newline  
+   \textbf{\Large Profesor}\\[0.5cm] 
+    \textsc{\normalsize Francisco Torres Rojas}\\[0.5cm] 
+    \end{titlepage} 
+    
+\titlepage{\textbf{Modo Ejemplo:}} \newline \newline 
+        Se resolverá un problema general por medio de diversos algoritmos que nos 
+        permitan encontrar una solución a ese problema. 
+        El problema que se nos plantea es sobre árboles de búsqueda binarios. \\ 
+        Hay que ordenar una serie de valores o llaves en forma de árbol binario, de manera que 
+        el nivel de búsqueda promedio sea el más óptimo. 
+        Tenemos una serie de llaves que quieren acomodarse en una estructura de árbol, 
+        pero esas llaves deben tener un respectivo peso 
+        y un cáracter único que será asignado de manera aleatoria. \ \ \newline \newline 
+        Restricciones: 
+        \begin{itemize} 
+        \item \textbf{Estructura:} Se formará un árbol binario óptimo. 
+        \item \textbf{Llaves:} Se generarán 6 llaves de forma aleatoria. 
+        \item \textbf{Peso:} Varía entre $1 \leq C{i} \leq 1000$. 
+        \item Los caracteres ASCII varían. 
+        \end{itemize} 
+        Los dos algoritmos que vamos a implementar son: 
+        \begin{itemize} 
+        \item \textbf{Algoritmo de Búsqueda Dinámica:} Algoritmo para el ABB óptimo. 
+        \item \textbf{Algoritmo Greedy Básico:} Cada vez se escoge la llave de máxima probabilidad 
+         para que sea la raíz del árbol. 
+        \end{itemize} 
+        \ En el caso de programación dinámica ya que nuestro objetivo es minimizar el costo promedio de la búsqueda, usamos la fórmula: 
+        \[ \textsc{\normalsize MIN(Z)}\\[0.5cm] = \sum_{i=1}^{n}c_{i}p_{i} \] 
+        \ Que está sujeto a:  
+        \[ \sum p_{i} \equiv 1 \] 
+        \ Con cada $c_{i}$ = 1, 2, ... n  
+        \ \ \newline \newline 
+        
+Se muestra a continuación la tabla de objetos con su respectivo costo (peso) y probabilidad 
+        que fueron asignados aleatoriamente cumpliendo con las restricciones: 
+\definecolor{Gray}{gray}{0.9}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\begin{center}
+\begin{tabu} to 0.6\textwidth { | X[l] | X[l] | X[l] | } 
+\hline
+\rowcolor{Gray}
+\textbf{Letra} & \textbf{Peso} & \textbf{Probabilidad}\\
+\hline
+Object \textbackslash & 591 & 0.18 \\
+\hline
+Object $+$ & 583 & 0.18 \\
+\hline
+Object L & 849 & 0.26 \\
+\hline
+Object k & 244 & 0.07 \\
+\hline
+Object p & 842 & 0.26 \\
+\hline
+Object B & 168 & 0.05 \\
+\hline
+\end{tabu} \\
+\end{center}
+\section{Algoritmo AAB Óptimo} 
+        Es un problema de solución de búsqueda óptima:  
+        En nuestro caso, queremos minimizar el costo de la búsqueda promedio. 
+        Para solucionar el problema vamos a hacer uso de una tabla (n+1) x (n+1), donde n es la cantidad 
+        de objetos o llaves disponibles. 
+        Como se menciona en las restricciones del problema $n = 6$ por lo que tendremos 
+        dos tablas (7x7). La tabla A donde estará el costo promedio y la tabla R donde estará 
+        los índices de búsqueda más rápidos. \newline \newline \newline 
+        \textbf{\Large Fórmula Matemática} 
+        \[ \textsc{\normalsize MIN(Z)}\\[0.5cm] = \sum_{i=1}^{6}c_{i}p_{i} \] 
+        \ Sujeto a:  
+        \[ \sum p_{i} \leq 1 \] 
+        \ En otras palabras tendremos 
+\[ (p_{1} \approx 0.1803)+(p_{2} \approx 0.1779)+(p_{3} \approx 0.2591)+(p_{4} \approx 0.0745)+(p_{5} \approx 0.2569)+(p_{6} \approx 0.0513) = 1 \]
+\newline Ahora proseguimos realizando la tabla dinámica.
+\newline \newline \newline \textbf{Tabla A: }
+\definecolor{Gray}{gray}{0.5}
+\definecolor{GreenBlack}{RGB}{2,80,0}
+\begin{center}
+\begin{tabu} to 1.0\textwidth { | c | c | c | c | c | c | c | c | }
+\hline
+\cellcolor{Gray}\color{black}\textbf{X} & \cellcolor{Gray}\color{black}\textbf{0} & \cellcolor{Gray}\color{black}\textbf{1} & \cellcolor{Gray}\color{black}\textbf{2} & \cellcolor{Gray}\color{black}\textbf{3} & \cellcolor{Gray}\color{black}\textbf{4} & \cellcolor{Gray}\color{black}\textbf{5} & \cellcolor{Gray}\color{black}\textbf{6} \\ 
+\hline
+\cellcolor{Gray}\color{black}1 & 0.00 & 0.18 & 0.54 & 1.06 & 1.28 & 1.89 & 2.04 \\ 
+\hline
+\cellcolor{Gray}\color{black}2 &  --  & 0.00 & 0.18 & 0.61 & 0.76 & 1.35 & 1.51 \\ 
+\hline
+\cellcolor{Gray}\color{black}3 &  --  &  --  & 0.00 & 0.26 & 0.41 & 1.00 & 1.10 \\ 
+\hline
+\cellcolor{Gray}\color{black}4 &  --  &  --  &  --  & 0.00 & 0.07 & 0.41 & 0.51 \\ 
+\hline
+\cellcolor{Gray}\color{black}5 &  --  &  --  &  --  &  --  & 0.00 & 0.26 & 0.36 \\ 
+\hline
+\cellcolor{Gray}\color{black}6 &  --  &  --  &  --  &  --  &  --  & 0.00 & 0.05 \\ 
+\hline
+\cellcolor{Gray}\color{black}7 &  --  &  --  &  --  &  --  &  --  &  --  & 0.00 \\ 
+\hline
+\end{tabu} \\
+\end{center}
+\textbf{Tabla R: }
+\begin{center}
+\begin{tabu} to 1.0\textwidth { | l | l | l | l | l | l | l | l | }
+\hline
+\cellcolor{Gray}\color{black}\textbf{X} & \cellcolor{Gray}\color{black}\textbf{0} & \cellcolor{Gray}\color{black}\textbf{1} & \cellcolor{Gray}\color{black}\textbf{2} & \cellcolor{Gray}\color{black}\textbf{3} & \cellcolor{Gray}\color{black}\textbf{4} & \cellcolor{Gray}\color{black}\textbf{5} & \cellcolor{Gray}\color{black}\textbf{6} \\ 
+\hline
+\cellcolor{Gray}\color{black}1 &  0  &  1  &  1  &  2  &  2  &  3  &  3  \\ 
+\hline
+\cellcolor{Gray}\color{black}2 &  -  &  0  &  2  &  3  &  3  &  3  &  3  \\ 
+\hline
+\cellcolor{Gray}\color{black}3 &  -  &  -  &  0  &  3  &  3  &  3  &  5  \\ 
+\hline
+\cellcolor{Gray}\color{black}4 &  -  &  -  &  -  &  0  &  4  &  5  &  5  \\ 
+\hline
+\cellcolor{Gray}\color{black}5 &  -  &  -  &  -  &  -  &  0  &  5  &  5  \\ 
+\hline
+\cellcolor{Gray}\color{black}6 &  -  &  -  &  -  &  -  &  -  &  0  &  6  \\ 
+\hline
+\cellcolor{Gray}\color{black}7 &  -  &  -  &  -  &  -  &  -  &  -  &  0  \\ 
+\hline
+\end{tabu} \\
+\end{center}
+El algoritmo tarda aproximadamente: 0.005000 segundos en ejecutarse
+\end{document}
